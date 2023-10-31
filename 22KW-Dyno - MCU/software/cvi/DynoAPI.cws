@@ -1,0 +1,271 @@
+[Workspace Header]
+Version = 1900
+Pathname = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/DynoAPI.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2019"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2019"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "DynoAPI.prj"
+Drag Bar Left = 340
+Window Top = 33
+Window Left = 65
+Window Bottom = 920
+Window Right = 1671
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 7
+Window Confinement Region Enabled = True
+MainColumnWidth = 323
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1900
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Release"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/source/Dyno_API.c"
+File Type = "CSource"
+Disk Date = 3763610714
+In Projects = "1,"
+Source Window State = "1,604,604,604,4,18,4,0,3,0,0,0,0,0,0,0,551,0,604,18,400,600,1,0,"
+Window Top = 31
+Window Z-Order = 7
+
+[File 0002]
+Path = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/include/zlgInterface.h"
+File Type = "Include"
+Disk Date = 3777070277
+In Projects = "1,"
+Source Window State = "1,99,99,99,0,0,0,0,0,0,0,0,0,0,0,0,46,0,99,0,400,600,1,0,"
+Window Top = 31
+Window Z-Order = 6
+
+[File 0003]
+Path = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/source/canInterface.c"
+File Type = "CSource"
+Disk Date = 3777070277
+In Projects = "1,"
+Source Window State = "1,90,90,90,20,31,20,0,3,0,0,0,0,0,0,0,56,0,90,31,400,600,1,0,"
+Window Top = 31
+Window Left = 10
+Window Z-Order = 4
+
+[File 0004]
+Path = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/source/zlgInterface.c"
+File Type = "CSource"
+Disk Date = 3777089019
+In Projects = "1,"
+Source Window State = "1,83,83,83,5,5,5,0,0,0,0,0,0,0,0,0,30,0,83,5,400,600,1,0,"
+Window Top = 31
+Window Z-Order = 3
+
+[File 0005]
+Path = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/include/canInterface.h"
+File Type = "Include"
+Disk Date = 3777070277
+In Projects = "1,"
+Source Window State = "1,37,37,37,4,22,4,0,3,0,0,0,0,0,0,0,0,0,37,22,401,693,1,0,"
+Window Top = 33
+Window Left = 10
+Window Z-Order = 5
+
+[File 0006]
+Path = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/include/yokogawa.h"
+File Type = "Include"
+Disk Date = 3714567406
+In Projects = "1,"
+Source Window State = "1,25,25,25,12,26,12,0,3,0,0,0,0,0,0,0,0,0,25,26,401,693,1,0,"
+Window Top = 33
+Window Left = 10
+Window Z-Order = 2
+
+[File 0007]
+Path = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/source/yokogawa.c"
+File Type = "CSource"
+Disk Date = 3721983338
+In Projects = "1,"
+Source Window State = "1,236,236,236,22,26,22,0,3,0,0,0,0,0,0,0,277,0,236,26,400,600,1,0,"
+Window Top = 31
+Window Z-Order = 1
+
+[File 0008]
+Path = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/include/cJSON.h"
+File Type = "Include"
+Disk Date = 3714567406
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0009]
+Path = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/include/Dyno_API.h"
+File Type = "Include"
+Disk Date = 3763609707
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0010]
+Path = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/include/git_version.h"
+File Type = "Include"
+Disk Date = 3714567406
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0011]
+Path = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/include/my_utility.h"
+File Type = "Include"
+Disk Date = 3715073752
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0012]
+Path = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/source/cJSON.c"
+File Type = "CSource"
+Disk Date = 3714567406
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0013]
+Path = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/source/my_utility.c"
+File Type = "CSource"
+Disk Date = 3714567406
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0014]
+Path = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/zlg/ControlCAN.dll"
+File Type = "DLL"
+Disk Date = 3714567406
+In Projects = "1,"
+
+[File 0015]
+Path = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/zlg/ControlCAN.h"
+File Type = "Include"
+Disk Date = 3714567406
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0016]
+Path = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/zlg/ControlCAN.lib"
+File Type = "Library"
+Disk Date = 3714567406
+In Projects = "1,"
+
+[Tab Order]
+Tab 0001 = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/source/Dyno_API.c"
+Tab 0002 = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/source/canInterface.c"
+Tab 0003 = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/include/zlgInterface.h"
+Tab 0004 = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/source/zlgInterface.c"
+Tab 0005 = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/include/canInterface.h"
+Tab 0006 = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/include/yokogawa.h"
+Tab 0007 = "/c/Users/Henry/Documents/GitHub/22KW-Dyno/software/cvi/source/yokogawa.c"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+

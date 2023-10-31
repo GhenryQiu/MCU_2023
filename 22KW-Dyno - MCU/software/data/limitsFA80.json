@@ -1,0 +1,73 @@
+[
+	{
+		"sec": 27,
+		"spec": {
+			"torque": 11.1,
+			"lower_speed": 1674,
+			"upper_speed": 1684,
+			"input_power": 0,
+			"output_power": 0,
+			"efficiency": 89.27
+			
+		}
+	},
+	{
+		"sec": 46,
+		"spec": {
+			"torque": 29.5,
+			"lower_speed": 2330,
+			"upper_speed": 2340,
+			"input_power": 0,
+			"output_power": 0,
+			"efficiency": 90.16
+		}
+	},
+	{
+		"sec": 87,
+		"spec": {
+			"torque": 92,
+			"lower_speed": 1088,
+			"upper_speed": 1098,
+			
+			"input_power": 0,
+			"output_power": 0,
+			"efficiency": 78.58
+		}
+	} ,
+	{
+		"sec": 123,
+		"spec": {
+			"torque": 13.2,
+			"lower_speed": 3769,
+			"upper_speed": 3779,
+			
+			"input_power": 0,
+			"output_power": 0,
+			"efficiency": 82.8
+		}
+	} ,
+	{
+		"sec": 134,
+		"spec": {
+			"torque": 29.2,
+			"lower_speed": 3769,
+			"upper_speed": 3779,
+			
+			"input_power": 0,
+			"output_power": 0,
+			"efficiency": 85.48
+		}
+	},
+	{
+		"sec": 165,
+		"spec": {
+			"torque": 83,
+			"lower_speed": 1551,
+			"upper_speed": 1561,
+			
+			"input_power": 0,
+			"output_power": 0,
+			"efficiency": 82.46
+		}
+	}
+]

@@ -1,0 +1,75 @@
+[
+	{
+		"sec": 27,
+		"spec": {
+			"torque": 57.5,
+			"lower_speed": 1697,
+			"upper_speed": 1707,
+			"DC_power": 0.0,
+			"input_power": 11.15,
+			"output_power": 10.25,
+			"efficiency": 91.91
+			
+		}
+	},
+	{
+		"sec": 46,
+		"spec": {
+			"torque": 36.2,
+			"lower_speed": 1910,
+			"upper_speed": 1920,
+			
+			"input_power": 7.8,
+			"output_power": 7.26,
+			"efficiency": 93.06
+		}
+	},
+	{
+		"sec": 87,
+		"spec": {
+			"torque": 127.6,
+			"lower_speed": 1059,
+			"upper_speed": 1069,
+			
+			"input_power": 17.7,
+			"output_power": 14.22,
+			"efficiency": 80.32
+		}
+	} ,
+	{
+		"sec": 123,
+		"spec": {
+			"torque": 28.9,
+			"lower_speed": 3399,
+			"upper_speed": 3409,
+			
+			"input_power": 11.5,
+			"output_power": 10.3,
+			"efficiency": 89.57
+		}
+	} ,
+	{
+		"sec": 134,
+		"spec": {
+			"torque": 45.5,
+			"lower_speed": 3399,
+			"upper_speed": 3409,
+			
+			"input_power": 18.4,
+			"output_power": 16.22,
+			"efficiency": 88.14
+		}
+	},
+	{
+		"sec": 165,
+		"spec": {
+			"torque": 96.5,
+			"lower_speed": 1697,
+			"upper_speed": 1707,
+			
+			"input_power": 20,
+			"output_power": 17.2,
+			"efficiency": 85.99
+		}
+	}
+]
