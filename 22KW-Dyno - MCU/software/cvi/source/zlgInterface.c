@@ -18,10 +18,13 @@
 #define 	MY_CAN_DEVICE 			VCI_USBCAN_E_U
 #define 	MY_DEV_INDEX 			0
 
-#define 	ECU_CMD_ID 				0x1E0
-#define 	ECU_FAULT_AND_STATUS 	0xC65D1D1
-#define 	ECU_INFO_ID 			0xC65D1D2
-#define 	ECU_TEMP_ID 			0xC65D1D3
+#define 	ECU_CMD_ID 				0x30D
+#define 	ECU_FAULT_ID            0x30E
+#define 	ECU_INFO_ID 			0x149
+#define 	ECU_TEMP_ID 			0x304
+#define     ECU_STATUS And MotTq    0x7E
+
+
 
 //==============================================================================
 // Types

@@ -76,15 +76,16 @@ typedef struct {
 } CAN_Setting;
 
 typedef enum {
-	ECU_CanCmd 		=	0x60,
-	ECU_CanAck 		=	0xE0,
+	ECU_CanCmd 		=	0x30D,
+	/*ECU_CanAck 		=	0x30D,*/
 } ECU_CmdType;
 typedef enum {
-	ECU_Mode_UnlockPswd 	=	0x0,
-	ECU_Mode_ControlMode 	=	0x1,
-	ECU_Mode_ExternMode 	=	0x2,
-	ECU_Mode_Torque 		=	0x3,
-	ECU_Mode_Enable 		=	0x13,
+	/*ECU_Mode_UnlockPswd 	=	0x0,*/
+	ECU_EnableCmd           =  0x1,//MCU inverter Command Vld
+	ECU_Mode_ControlMode 	=	0x4,//MCU_Gear_positionVld
+	/*ECU_Mode_ExternMode 	=	0x4,//MCU_Gear_position*/
+	ECU_Mode_Torque 		=	0x1,//MCU Inverter Command
+	ECU_Mode_Enable 		=	0x1,//MCU_Gear_position
 } ECU_CmdDataIndex;
 
 
