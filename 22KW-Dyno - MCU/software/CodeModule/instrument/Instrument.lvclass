@@ -52,7 +52,7 @@
 		<Property Name="NI.ClassItem.State" Type="Int">1082929680</Property>
 	</Item>
 	<Item Name="can_readStatus.vi" Type="VI" URL="../can_readStatus.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'*!!!!$Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!$5!&amp;!!&gt;/&gt;7VF=GFD!"*!1!!"`````Q!%"7:B&gt;7RU!!V!"A!(4H6N:8*J9Q!51%!!!@````]!"A:4&gt;'&amp;U&gt;8-!!#Z!=!!?!!!5%EFO=X2S&gt;7VF&lt;H1O&lt;(:D&lt;'&amp;T=Q!!$EFO=X2S&gt;7VF&lt;H1A&lt;X6U!!!.1!E!"UZV&lt;76S;7-!'%"!!!(`````!!E,&gt;'6N='6S982V=G5!"!!!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!,%"Q!"Y!!"1337ZT&gt;(*V&lt;76O&gt;#ZM&gt;G.M98.T!!!.37ZT&gt;(*V&lt;76O&gt;#"J&lt;A"B!0!!$!!$!!5!"Q!)!!I!#Q!,!!M!$!!,!!M!$1-!!(A!!!U)!!!*!!!!#1!!!!U,!!!*!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!!!!!!%!!!$1!!!!Q!!!!!!!!!!!!!!1!/!!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*+!!!!%Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!"6!#1!045.68UVP&gt;%.U=GRS5X2T!!^!#1!*45.68UVP&gt;&amp;2R!"&amp;!#1!,45.68UVP&gt;%*V=V5!%5!*!!J.1V6@47^U5X"E!!"%!0%!!!!!!!!!!B**&lt;H.U=H6N:7ZU,GRW9WRB=X-/2&amp;658V.U982V=SZD&gt;'Q!'E"1!!1!"1!'!!=!#!&gt;$&lt;(6T&gt;'6S!#Z!=!!?!!!5%EFO=X2S&gt;7VF&lt;H1O&lt;(:D&lt;'&amp;T=Q!!$EFO=X2S&gt;7VF&lt;H1A&lt;X6U!!!:1!E!%D"Y-41Z8UV$66^.&lt;X2#&lt;W2Z6!!!'5!*!")Q?$-Q.&amp;^.1V6@47^U1G^E?61!!"F!#1!4-(AT-$2@45.68UVP&gt;%.U=GRS6!"#!0%!!!!!!!!!!B**&lt;H.U=H6N:7ZU,GRW9WRB=X--2&amp;658V2F&lt;8!O9X2M!"J!5!!$!!M!$!!.#%266&amp;^5:7VQ!!!01!5!#&amp;*F2GRU4(:M!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!#R!=!!?!!!5%EFO=X2S&gt;7VF&lt;H1O&lt;(:D&lt;'&amp;T=Q!!$5FO=X2S&gt;7VF&lt;H1A;7Y!91$Q!!Q!!Q!%!!E!#A!/!!]!"!!%!"!!"!!%!"%$!!"Y!!!.#!!!!!!!!!E!!!!.#Q!!#1!!!!E!!!!!!!!!!!!!!!I!!!!!!!!!!!!!!"!!!!U!!!!-!!!!!!!!!!!!!!%!%A!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
@@ -95,6 +95,24 @@
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1082929680</Property>
+	</Item>
+	<Item Name="DUT_Status.ctl" Type="VI" URL="../DUT_Status.ctl">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!V!!!!!1!N!0%!!!!!!!!!!B**&lt;H.U=H6N:7ZU,GRW9WRB=X-*1W^O&gt;(*P&lt;#!R!!A!!!!"!!!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">5242880</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1074541056</Property>
+	</Item>
+	<Item Name="DUT_Temp.ctl" Type="VI" URL="../DUT_Temp.ctl">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!V!!!!!1!N!0%!!!!!!!!!!B**&lt;H.U=H6N:7ZU,GRW9WRB=X-*1W^O&gt;(*P&lt;#!S!!A!!!!"!!!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">5242880</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1074541056</Property>
 	</Item>
 	<Item Name="instr_dataCluster.ctl" Type="VI" URL="../instr_dataCluster.ctl">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#G!!!!"Q!.1!I!"X:P&lt;(2B:W5!$5!+!!&gt;D&gt;8*S:7ZU!!V!#A!'&gt;'^S=86F!!!,1!I!"8.Q:76E!!V!#A!(4H6N:8*J9Q!31%!!!@````]!"!2U:7VQ!!".!0%!!!!!!!!!!B**&lt;H.U=H6N:7ZU,GRW9WRB=X-6;7ZT&gt;(*@:'&amp;U95.M&gt;8.U:8)O9X2M!"R!5!!&amp;!!!!!1!#!!-!"1&gt;$&lt;(6T&gt;'6S!!%!"A!!!!!</Property>

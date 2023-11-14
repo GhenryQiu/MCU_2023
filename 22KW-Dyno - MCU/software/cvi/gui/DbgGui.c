@@ -187,7 +187,9 @@ int CVICALLBACK cbTorqueCmd (int panel, int control, int event,
 	if (event==EVENT_COMMIT) {
 		errChk(GetCtrlAttribute(panel, PANEL_btnCan, ATTR_CALLBACK_DATA, &setting));
 		if (setting) {
-			errChk(GetCtrlAttribute(panel, control, ATTR_CTRL_VAL, &setting->torqueCmd));
+			float 	torqueCmd 	=	0;
+			errChk(GetCtrlAttribute(panel, control, ATTR_CTRL_VAL, &torqueCmd));
+			setting->torqueCmd = (torqueCmd+200)*5;
 		}
 	}
 Error:
@@ -211,7 +213,6 @@ int CVICALLBACK cbCtrlMode (int panel, int control, int event,
 		errChk(GetCtrlAttribute(panel, PANEL_btnCan, ATTR_CALLBACK_DATA, &setting));
 		if (setting) {
 			errChk(GetCtrlAttribute(panel, control, ATTR_CTRL_VAL, &setting->controlMode));
-			setting->setCtrlMode = TRUE;
 		}
 	}
 Error:

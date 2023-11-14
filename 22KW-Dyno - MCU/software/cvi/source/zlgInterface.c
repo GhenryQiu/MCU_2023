@@ -19,12 +19,8 @@
 #define 	MY_DEV_INDEX 			0
 
 #define 	ECU_CMD_ID 				0x30D
-#define 	ECU_FAULT_ID            0x30E
-#define 	ECU_INFO_ID 			0x149
-#define 	ECU_TEMP_ID 			0x304
-#define     ECU_STATUS And MotTq    0x7E
-
-
+#define 	FAULT_AND_STATUS_ID 	0x30E
+#define 	ECU_STATUS_ID 			0x07E
 
 //==============================================================================
 // Types
@@ -48,7 +44,13 @@ int zlgCAN_Write(CAN_Frame_t *frame, char errorMsg[]);
 int zlgCAN_Read (CAN_Frame_t *frame, char errorMsg[]);
 int zlgCAN_Flush(char errorMsg[]);
 int zlgCAN_WaitForFrame(u32 arbid, u8* Payload, u8 PayloadLength, int timeoutMs, char errorMsg[]);
-int ecu_CmdECU(ECU_CmdDataIndex mode, float data, char errorMsg[]);
+int ecu_WriteCmd(char IvtrReStCmd, char IvtrReStCmdVld, 
+				 unsigned short MotTqCmd, char MotTqCmdVld, 
+				 unsigned short MotSpdCmd, char MotSpdCmdVld, 
+				 char GearPosnCmd, char GearPosnCmdVld, char errorMsg[]);
+int ecu_StartTorqueCtrl(short MotTqCmd, char errorMsg[]);
+int ecu_StopTorqueCtrl(char errorMsg[]);
+
 
 //==============================================================================
 // Global variables
@@ -197,86 +199,39 @@ Error:
 }
 
 
-// ---------------------------- COMMAND ECU ------------------------------------
-int ecu_CmdECU(ECU_CmdDataIndex mode, float data, char errorMsg[]) {
-	int 		error 		=	0;
-	ErrMsg 		errMsg 		=	{0};
-	CAN_Frame_t	f 			=	{.length=6, .arbID=ECU_CMD_ID};
-	
-	memset(f.payload, 0, 8);
-	f.payload[0] = ECU_CanCmd;
-	f.payload[1] = mode;
-	switch (mode) {
-		case ECU_Mode_UnlockPswd:
-			f.payload[5] = ((u32) data) >> 24 & 0x000000FF;
-			f.payload[4] = ((u32) data) >> 16 & 0x000000FF;
-			f.payload[3] = ((u32) data) >> 8  & 0x000000FF;
-			f.payload[2] = ((u32) data) & 0x000000FF;
-			break;
-		case ECU_Mode_Torque:
-			memcpy(f.payload+2, &data, 4);
-			break;
-		case ECU_Mode_Enable:
-		case ECU_Mode_ControlMode: 
-
-		case ECU_Mode_ExternMode:
-			f.payload[2] = (u8) data;
-			break;
-	}
-	
-	errChk(zlgCAN_Write(&f, errMsg));
-Error:
-	if (errorMsg)	reportError();
-	return error;	
-}
-
-
 // ---------------------------- CORE DAEMON FOR CAN ----------------------------
 int CVICALLBACK ecu_CmdDaemon(void *functionData) {
-	int 			error 			= 	0,
-					j 				=	0;
+	int 			error 			= 	0;
 	long 			count 			= 	0,
 					i 				= 	0;
 	CAN_Setting		*setting 		=	(CAN_Setting *) functionData;
 	ErrMsg			errMsg			= 	{0};
 	CAN_Frame_t		f;
 	
-	errChk(ecu_CmdECU(ECU_Mode_UnlockPswd, 9344, errMsg));
-	Sleep(250);
-	errChk(ecu_CmdECU(ECU_Mode_Enable, 1, errMsg));
-	Sleep(250);
-	errChk(ecu_CmdECU(ECU_Mode_ControlMode, setting->controlMode, errMsg));
-	Sleep(250);
-	errChk(ecu_CmdECU(ECU_Mode_ExternMode, 2, errMsg));
-	Sleep(250);
-	errChk(ecu_CmdECU(ECU_Mode_Torque, setting->torqueCmd, errMsg));
-	Sleep(250);
+	errChk(ecu_StartTorqueCtrl(setting->torqueCmd, errMsg));
 	errChk(zlgCAN_Flush(errMsg));
 	while (!(setting->terminate)) {
-		errChk(ecu_CmdECU(ECU_Mode_Torque, setting->torqueCmd, errMsg));
-		Sleep(200);
-		if (setting->setCtrlMode) {
-			errChk(ecu_CmdECU(ECU_Mode_ControlMode, setting->controlMode, errMsg));
-			setting->setCtrlMode = FALSE;
-		}
+		errChk(ecu_WriteCmd(setting->controlMode, 1, setting->torqueCmd, 1, 0, 0, 4, 1, errMsg));
 		Sleep(200);
 		errChk(count = VCI_GetReceiveNum(cfg->myDev, cfg->myDevIndex, cfg->canIndex));
 		for (i = 0; i < count; i++) {
 			errChk(zlgCAN_Read(&f, errMsg));
 			switch (f.arbID) {
-				case 0xC65D1D1: // FaultAndStatus
-					memcpy(setting->fault, f.payload, 4);	
+				case FAULT_AND_STATUS_ID: // FaultAndStatus
+					memcpy(setting->fault, f.payload, 2);	
 					break;
-				case 0xC65D1D2: // info
-					setting->status[0] = (f.payload[1]<<8 & 0xFF00) + f.payload[0];
-					setting->status[1] = (f.payload[3]<<8 & 0xFF00) + f.payload[2];
-					setting->status[2] = (f.payload[5]<<8 & 0xFF00) + f.payload[4];
-					setting->status[3] = f.payload[6];
-					setting->status[4] = f.payload[7]>0;
+				case 0x7EU: // info
+					setting->status[0] = f.payload[1] & 0x0F;
+					setting->status[1] = 0.2*((f.payload[0]<<3 & 0x07F8U) + (f.payload[1]>>5 & 0x07U)) - 200;
 					break;
-				case 0xC65D1D3: // temp 
-					for (j=0; j<5; j++)
-						setting->temp[j] = f.payload[j]-40;
+				case 0x149U:
+					setting->status[2] = (f.payload[1]<<1 & 0x01FEU) + (f.payload[2]>>7 & 0x01U); 
+					setting->temp[0] = f.payload[4] - 40; 
+					break;
+				case 0x304U:
+					setting->status[3] = ((f.payload[3]<<7 & 0x7F80U) + (f.payload[4]>>1 & 0x007FU)) - 16000;
+					setting->temp[1] = f.payload[5] - 40;
+					setting->temp[2] = f.payload[6] - 40;
 					break;
 				default:
 					
@@ -285,20 +240,64 @@ int CVICALLBACK ecu_CmdDaemon(void *functionData) {
 		}
 	}
 Error:
-	if (setting->torqueCmd>1) {
-		for (int i = 0; i < 10; i++) {
-			ecu_CmdECU(ECU_Mode_Torque, 1, NULL);
-			Sleep(400);
-		}
-	}
-	if (setting->terminate ==TRUE){
-	ecu_CmdECU(ECU_Mode_Torque, 0, NULL);
-	Sleep(250);
-	ecu_CmdECU(ECU_Mode_ControlMode, 0, NULL);
-	}
+	ecu_StopTorqueCtrl(NULL);
 	if (error<0) {
 		utility_puts(errMsg);
 		MessagePopup("Error", errMsg);
 	}
+	return error;
+}
+
+
+// ==============================================================================
+// ----------------------------- WRITE SINGLE CMD -------------------------------
+int ecu_WriteCmd(char IvtrReStCmd, char IvtrReStCmdVld, 
+				 unsigned short MotTqCmd, char MotTqCmdVld, 
+				 unsigned short MotSpdCmd, char MotSpdCmdVld, 
+				 char GearPosnCmd, char GearPosnCmdVld, char errorMsg[]) {
+	CAN_Frame_t	f 			=	{.length=5, .arbID=ECU_CMD_ID};					 
+
+	f.payload[0] = (GearPosnCmdVld<<7 & 0x80U) + (GearPosnCmd<<4 & 0x70U) + (IvtrReStCmd<<1 & 0x0EU) + (IvtrReStCmdVld & 0x01U);
+	f.payload[1] = MotTqCmd>>3 & 0x00FFU;
+	f.payload[2] = (MotSpdCmd<<5 & 0x000EU) + (MotTqCmdVld<<4 & 0x10U) + (MotTqCmd>>11 & 0x0FU);
+	f.payload[3] = MotSpdCmd>>3 & 0x00FFU;
+	f.payload[4] = (MotSpdCmd<<5 & 0x000EU) + (MotSpdCmdVld<<4 & 0x10U);
+	return zlgCAN_Write(&f, errorMsg);
+}
+
+
+// ------------------------------ START TORQUE CTRL --------------------------------
+int ecu_StartTorqueCtrl(short MotTqCmd, char errorMsg[]) {
+	int 		error 		=	0;
+	ErrMsg 		errMsg 		=	{0};
+	
+	errChk(ecu_WriteCmd(0, 1, 0, 0, 0, 0, 0, 1, errMsg));
+	Sleep(250);
+	errChk(ecu_WriteCmd(1, 1, 0, 0, 0, 0, 4, 1, errMsg));
+	Sleep(250);
+	errChk(ecu_WriteCmd(1, 1, 0, 1, 0, 0, 4, 1, errMsg));
+	Sleep(250);
+	errChk(ecu_WriteCmd(1, 1, MotTqCmd, 1, 0, 0, 4, 1, errMsg));
+	Sleep(250);
+Error:
+	reportError();
+	return error;
+}
+
+
+// ------------------------------- STOP TORQUE CTRL --------------------------------
+int ecu_StopTorqueCtrl(char errorMsg[]) {
+	int 		error 		=	0;
+	ErrMsg 		errMsg 		=	{0};
+	
+	errChk(ecu_WriteCmd(1, 1, 0, 1, 0, 0, 4, 1, errMsg));
+	Sleep(250);
+	errChk(ecu_WriteCmd(1, 1, 0, 0, 0, 0, 4, 1, errMsg));
+	Sleep(250);
+	errChk(ecu_WriteCmd(0, 1, 0, 0, 0, 0, 0, 0, errMsg));
+	Sleep(250);
+	errChk(ecu_WriteCmd(0, 0, 0, 0, 0, 0, 0, 0, errMsg));
+Error:
+	reportError();
 	return error;
 }

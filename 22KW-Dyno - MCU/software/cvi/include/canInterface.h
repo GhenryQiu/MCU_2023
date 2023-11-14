@@ -36,7 +36,7 @@ int CAN_LaunchDaemon(char errorMsg[]);
 int CAN_StopDaemon(void);
 int CAN_SetToruqe(float torqueCmd, char errorMsg[]);
 int CAN_SetControlMode(unsigned char controlMode, char errorMsg[]);
-int CAN_GetStatus(unsigned short status[], unsigned char fault[], float temperature[], char errorMsg[]);
+int CAN_GetStatus(float status[], unsigned char fault[], float temperature[], char errorMsg[]);
 
 #ifdef __cplusplus
     }

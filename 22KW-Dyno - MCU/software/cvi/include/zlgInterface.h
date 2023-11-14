@@ -66,27 +66,13 @@ typedef struct CAN_Frame_t {
 typedef struct {
 	int 					panel;
 	int 					terminate;
-	unsigned char  			setCtrlMode;
 	unsigned char 			controlMode;
-	float 					torqueCmd;
-	float 					temp[5];
-	unsigned char 			fault[4];
-	unsigned short   		status[5];
+	unsigned short 			torqueCmd;
+	float 					temp[3];
+	unsigned char 			fault[2];
+	float   				status[4];
 	CmtThreadFunctionID 	thid;
 } CAN_Setting;
-
-typedef enum {
-	ECU_CanCmd 		=	0x30D,
-	/*ECU_CanAck 		=	0x30D,*/
-} ECU_CmdType;
-typedef enum {
-	/*ECU_Mode_UnlockPswd 	=	0x0,*/
-	ECU_EnableCmd           =  0x1,//MCU inverter Command Vld
-	ECU_Mode_ControlMode 	=	0x4,//MCU_Gear_positionVld
-	/*ECU_Mode_ExternMode 	=	0x4,//MCU_Gear_position*/
-	ECU_Mode_Torque 		=	0x1,//MCU Inverter Command
-	ECU_Mode_Enable 		=	0x1,//MCU_Gear_position
-} ECU_CmdDataIndex;
 
 
 //==============================================================================

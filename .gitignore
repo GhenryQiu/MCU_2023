@@ -1,0 +1,11 @@
+
+22KW-Dyno - MCU/Document/ECU2_BICAN/ECU_BICAN_MCU_20230809_Fix.ini
+cvibuild.*/
+*.cws
+*.csv
+msvc/
+software/cvi/DynoAPI.dll
+*.aliases
+*.lvlps
+DynoAPI.lib
+*.aliases
