@@ -48,6 +48,7 @@ int CAN_LaunchDaemon(char errorMsg[]) {
 		nullChk(canSetting = malloc(sizeof(CAN_Setting)));
 		memset(canSetting, 0, sizeof(CAN_Setting));
 		canSetting->controlMode = 1;
+		errChk(CAN_SetToruqe(0, errMsg));
 		errChk(CmtScheduleThreadPoolFunction(DEFAULT_THREAD_POOL_HANDLE, 
 											 ecu_CmdDaemon, canSetting, 
 											 &canSetting->thid));

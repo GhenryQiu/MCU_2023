@@ -52,7 +52,7 @@ Disk Date = 3782499250
 In Projects = "1,"
 Source Window State = "1,604,604,604,4,18,4,0,3,0,0,0,0,0,0,0,547,0,604,18,400,600,1,0,"
 Window Top = 31
-Window Z-Order = 4
+Window Z-Order = 2
 
 [File 0002]
 Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/include/zlgInterface.h"
@@ -66,9 +66,9 @@ Window Z-Order = 6
 [File 0003]
 Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/source/canInterface.c"
 File Type = "CSource"
-Disk Date = 3782794385
+Disk Date = 3782843098
 In Projects = "1,"
-Source Window State = "1,77,77,77,8,50,50,0,3,0,0,0,0,0,0,0,51,0,77,8,400,600,1,0,"
+Source Window State = "1,50,50,50,15,15,15,0,0,0,0,0,0,0,0,0,50,0,50,15,400,600,1,0,"
 Window Top = 31
 Window Left = 10
 Window Z-Order = 1
@@ -78,10 +78,10 @@ Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/source/zlgInterface.c"
 File Type = "CSource"
 Disk Date = 3782794270
 In Projects = "1,"
-Source Window State = "1,214,214,214,19,19,19,0,0,0,0,0,0,0,0,0,198,0,214,19,453,2111,1,0,"
+Source Window State = "1,175,175,175,54,54,54,0,0,0,0,0,0,0,0,0,238,0,175,54,453,2111,1,0,"
 Window Top = 33
 Window Left = 10
-Window Z-Order = 5
+Window Z-Order = 3
 
 [File 0005]
 Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/include/canInterface.h"
@@ -91,7 +91,7 @@ In Projects = "1,"
 Source Window State = "1,38,38,38,23,23,23,0,0,0,0,0,0,0,0,0,0,0,38,23,401,693,1,0,"
 Window Top = 33
 Window Left = 10
-Window Z-Order = 2
+Window Z-Order = 4
 
 [File 0006]
 Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/include/yokogawa.h"
@@ -120,7 +120,7 @@ In Projects = "1,"
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,0,0,0,453,863,1,0,"
 Window Top = 126
 Window Left = 58
-Window Z-Order = 3
+Window Z-Order = 5
 
 [File 0009]
 Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/include/my_utility.h"
