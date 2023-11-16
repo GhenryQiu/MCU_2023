@@ -14,17 +14,10 @@ Number of Projects = 1
 Active Project = 1
 Project 0001 = "DynoAPI.prj"
 Drag Bar Left = 340
-<<<<<<< Updated upstream
 Window Top = 122
 Window Left = 70
 Window Bottom = 1009
 Window Right = 1676
-=======
-Window Top = 128
-Window Left = 65
-Window Bottom = 1015
-Window Right = 1671
->>>>>>> Stashed changes
 Maximized = False
 Maximized Children = True
 Max32 Number Of Errors = 20
@@ -61,11 +54,7 @@ Disk Date = 3782283559
 In Projects = "1,"
 Source Window State = "1,604,604,604,4,18,4,0,3,0,0,0,0,0,0,0,559,0,604,18,400,600,1,0,"
 Window Top = 31
-<<<<<<< Updated upstream
 Window Z-Order = 2
-=======
-Window Z-Order = 5
->>>>>>> Stashed changes
 
 [File 0002]
 Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/zl"
@@ -81,31 +70,13 @@ Window Z-Order = 6
 Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/can"
 Path Line0002 = "Interface.c"
 File Type = "CSource"
-<<<<<<< Updated upstream
 Disk Date = 3782941135
 In Projects = "1,"
-Source Window State = "1,50,50,50,15,15,15,0,0,0,0,0,0,0,0,0,64,0,50,15,400,600,1,0,"
-=======
-Disk Date = 3782796832
-In Projects = "1,"
-Source Window State = "1,77,77,77,8,50,50,0,3,0,0,0,0,0,0,0,63,0,77,8,400,600,1,0,"
->>>>>>> Stashed changes
+Source Window State = "1,38,38,38,26,26,26,0,0,0,0,0,0,0,0,0,16,0,38,26,400,600,1,0,"
 Window Top = 31
-Window Left = 10
-Window Z-Order = 3
-
-[File 0004]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/zlg"
-Path Line0002 = "Interface.c"
-File Type = "CSource"
-Disk Date = 3782796832
-In Projects = "1,"
-Source Window State = "1,254,254,254,32,40,32,0,3,0,0,0,0,0,0,0,104,0,254,40,453,2111,1,0,"
-Window Top = 33
 Window Left = 10
 Window Z-Order = 1
 
-<<<<<<< Updated upstream
 [File 0004]
 Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/zlg"
 Path Line0002 = "Interface.c"
@@ -117,8 +88,6 @@ Window Top = 33
 Window Left = 10
 Window Z-Order = 3
 
-=======
->>>>>>> Stashed changes
 [File 0005]
 Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/ca"
 Path Line0002 = "nInterface.h"
@@ -160,11 +129,7 @@ In Projects = "1,"
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,0,0,0,453,863,1,0,"
 Window Top = 126
 Window Left = 58
-<<<<<<< Updated upstream
 Window Z-Order = 5
-=======
-Window Z-Order = 4
->>>>>>> Stashed changes
 
 [File 0009]
 Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/my"
@@ -240,7 +205,6 @@ Tab 0003 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/so
 Tab 0003 Line0002 = "_utility.h"
 Tab 0004 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/zl"
 Tab 0004 Line0002 = "gInterface.h"
-<<<<<<< Updated upstream
 Tab 0005 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/Dy"
 Tab 0005 Line0002 = "no_API.h"
 Tab 0006 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/ca"
@@ -249,16 +213,6 @@ Tab 0007 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/so
 Tab 0007 Line0002 = "Interface.c"
 Tab 0008 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/Dyn"
 Tab 0008 Line0002 = "o_API.c"
-=======
-Tab 0005 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/zlg"
-Tab 0005 Line0002 = "Interface.c"
-Tab 0006 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/Dyn"
-Tab 0006 Line0002 = "o_API.c"
-Tab 0007 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/Dy"
-Tab 0007 Line0002 = "no_API.h"
-Tab 0008 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/ca"
-Tab 0008 Line0002 = "nInterface.h"
->>>>>>> Stashed changes
 Tab 0009 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/can"
 Tab 0009 Line0002 = "Interface.c"
 
