@@ -259,7 +259,7 @@ int ecu_WriteCmd(char IvtrReStCmd, char IvtrReStCmdVld,
 
 	f.payload[0] = (GearPosnCmdVld<<7 & 0x80U) + (GearPosnCmd<<4 & 0x70U) + (IvtrReStCmd<<1 & 0x0EU) + (IvtrReStCmdVld & 0x01U);
 	f.payload[1] = MotTqCmd>>3 & 0x00FFU;
-	f.payload[2] = (MotSpdCmd<<5 & 0x000EU) + (MotTqCmdVld<<4 & 0x10U) + (MotTqCmd>>11 & 0x0FU);
+	f.payload[2] = (MotTqCmd<<5 & 0x00E0U) + (MotTqCmdVld<<4 & 0x10U) + (MotSpdCmd>>11 & 0x0FU);
 	f.payload[3] = MotSpdCmd>>3 & 0x00FFU;
 	f.payload[4] = (MotSpdCmd<<5 & 0x000EU) + (MotSpdCmdVld<<4 & 0x10U);
 	return zlgCAN_Write(&f, errorMsg);
