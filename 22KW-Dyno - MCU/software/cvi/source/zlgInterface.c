@@ -273,12 +273,12 @@ int ecu_StartTorqueCtrl(short MotTqCmd, char errorMsg[]) {
 	
 	errChk(ecu_WriteCmd(0, 1, 0, 0, 0, 0, 0, 1, errMsg));
 	Sleep(250);
-	errChk(ecu_WriteCmd(1, 1, 0, 0, 0, 0, 4, 1, errMsg));
-	Sleep(250);
-	errChk(ecu_WriteCmd(1, 1, 0, 1, 0, 0, 4, 1, errMsg));
+	errChk(ecu_WriteCmd(1, 1, MotTqCmd, 0, 0, 0, 4, 1, errMsg));
 	Sleep(250);
 	errChk(ecu_WriteCmd(1, 1, MotTqCmd, 1, 0, 0, 4, 1, errMsg));
 	Sleep(250);
+	//errChk(ecu_WriteCmd(1, 1, MotTqCmd, 1, 0, 0, 4, 1, errMsg));
+	//Sleep(250);
 Error:
 	reportError();
 	return error;
@@ -290,13 +290,16 @@ int ecu_StopTorqueCtrl(char errorMsg[]) {
 	int 		error 		=	0;
 	ErrMsg 		errMsg 		=	{0};
 	
-	errChk(ecu_WriteCmd(1, 1, 0, 1, 0, 0, 4, 1, errMsg));
+	//errChk(ecu_WriteCmd(1, 1, 0x3E8, 1, 0, 0, 4, 1, errMsg));//0x3E8
+	//Sleep(250);
+	errChk(ecu_WriteCmd(1, 1, 0x3E8, 0, 0, 0, 4, 1, errMsg));
 	Sleep(250);
-	errChk(ecu_WriteCmd(1, 1, 0, 0, 0, 0, 4, 1, errMsg));
+	errChk(ecu_WriteCmd(0, 1,0x3E8, 0, 0, 0, 0, 0, errMsg));
 	Sleep(250);
-	errChk(ecu_WriteCmd(0, 1, 0, 0, 0, 0, 0, 0, errMsg));
+	errChk(ecu_WriteCmd(0, 0, 0x3E8, 0, 0, 0, 0, 0, errMsg));
 	Sleep(250);
-	errChk(ecu_WriteCmd(0, 0, 0, 0, 0, 0, 0, 0, errMsg));
+	//errChk(ecu_WriteCmd(0, 0, 0, 0, 0, 0, 0, 0, errMsg));
+	//Sleep(250);
 Error:
 	reportError();
 	return error;

@@ -74,7 +74,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/distribution/DynoGUI_MCU/Application</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{1743F8A4-09C2-4D0C-B1AD-AEAB97A84B07}</Property>
-				<Property Name="Bld_version.build" Type="Int">115</Property>
+				<Property Name="Bld_version.build" Type="Int">116</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">DynoGUI_MCU.exe</Property>
