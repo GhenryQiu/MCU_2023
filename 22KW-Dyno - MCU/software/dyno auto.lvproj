@@ -60,39 +60,39 @@
 			<Item Name="Utility_DataFolder.vi" Type="VI" URL="../CodeModule/Utility/Utility_DataFolder.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="DynoGUI" Type="EXE">
+			<Item Name="DynoGUI_MCU" Type="EXE">
 				<Property Name="App_INI_aliasGUID" Type="Str">{D6017702-B72C-4991-AA7B-6078DE67A267}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{5920FFF1-D6F2-4171-B5B6-4650C0919F45}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{EAAA0A0E-582B-4517-A948-2BA86EDC3AE6}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">DynoGUI</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">DynoGUI_MCU</Property>
 				<Property Name="Bld_defaultLanguage" Type="Str">ChineseS</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeTypedefs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/distribution/DynoGUI/Application</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/distribution/DynoGUI_MCU/Application</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{1743F8A4-09C2-4D0C-B1AD-AEAB97A84B07}</Property>
-				<Property Name="Bld_version.build" Type="Int">112</Property>
+				<Property Name="Bld_version.build" Type="Int">114</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">DynoGUI.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/distribution/DynoGUI/Application/DynoGUI.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">DynoGUI_MCU.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/distribution/DynoGUI_MCU/Application/DynoGUI_MCU.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/C/distribution/DynoGUI/Application/data</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/distribution/DynoGUI_MCU/Application/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[2].destName" Type="Str">kerneldlls</Property>
-				<Property Name="Destination[2].path" Type="Path">/C/distribution/DynoGUI/Application/data/kerneldlls</Property>
+				<Property Name="Destination[2].path" Type="Path">/C/distribution/DynoGUI_MCU/Application/data/kerneldlls</Property>
 				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/data/LOGO128 .ico</Property>
 				<Property Name="Source[0].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A1E403F8-BB74-4A22-8699-EEEF94388251}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{48807234-E0B7-4404-924D-13B81AF3EAE5}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Show vertical scroll bar</Property>
@@ -148,7 +148,7 @@
 				<Property Name="TgtF_legalCopyright" Type="Str">NUPO2021 </Property>
 				<Property Name="TgtF_productName" Type="Str">Dyno Gui</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{78D0B3D3-7A4B-4946-93D2-4F9A6061B0F6}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">DynoGUI.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">DynoGUI_MCU.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
