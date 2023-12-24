@@ -101,7 +101,7 @@ int CAN_GetStatus(float status[], unsigned char fault[], float temperature[], ch
 	if (canSetting) {
 		memcpy(status, canSetting->status, sizeof(float )*4);//unsigned short
 		memcpy(fault, canSetting->fault, 2);
-		memcpy(temperature, canSetting->temp, sizeof(float)*3);//sizeof 返回 5个浮点数 temperature值
+		memcpy(temperature, canSetting->temp, sizeof(float)*3);//sizeof 返回 3个浮点数 temperature值
 	} else {
 		strcpy(errorMsg, "初始化失败");//can daemon is not initialized
 		error = -100;
