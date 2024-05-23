@@ -54,7 +54,7 @@ Disk Date = 3782945548
 In Projects = "1,"
 Source Window State = "1,658,658,658,23,27,23,0,3,0,0,0,0,0,0,0,612,0,658,27,400,600,1,0,"
 Window Top = 31
-Window Z-Order = 6
+Window Z-Order = 1
 
 [File 0002]
 Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/zl"
@@ -64,7 +64,7 @@ Disk Date = 3782945548
 In Projects = "1,"
 Source Window State = "1,29,29,29,35,35,35,0,0,0,0,0,0,0,0,0,0,0,29,35,400,600,1,0,"
 Window Top = 31
-Window Z-Order = 4
+Window Z-Order = 5
 
 [File 0003]
 Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/can"
@@ -72,10 +72,10 @@ Path Line0002 = "Interface.c"
 File Type = "CSource"
 Disk Date = 3784248392
 In Projects = "1,"
-Source Window State = "1,102,102,102,34,39,34,0,3,0,0,0,0,0,0,0,19,0,102,39,400,600,1,0,"
+Source Window State = "1,102,102,102,34,39,34,0,3,0,0,0,0,0,0,0,0,0,102,39,400,600,1,0,"
 Window Top = 31
 Window Left = 10
-Window Z-Order = 1
+Window Z-Order = 3
 
 [File 0004]
 Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/zlg"
@@ -86,7 +86,7 @@ In Projects = "1,"
 Source Window State = "1,228,228,228,29,33,29,0,3,0,0,0,0,0,0,0,182,0,228,33,453,1924,1,0,"
 Window Top = 33
 Window Left = 10
-Window Z-Order = 5
+Window Z-Order = 6
 
 [File 0005]
 Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/ca"
@@ -97,7 +97,7 @@ In Projects = "1,"
 Source Window State = "1,38,38,38,23,23,23,0,0,0,0,0,0,0,0,0,2,0,38,23,401,693,1,0,"
 Window Top = 33
 Window Left = 10
-Window Z-Order = 2
+Window Z-Order = 4
 
 [File 0006]
 Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/yo"
@@ -129,7 +129,7 @@ In Projects = "1,"
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,0,0,0,453,863,1,0,"
 Window Top = 126
 Window Left = 58
-Window Z-Order = 3
+Window Z-Order = 2
 
 [File 0009]
 Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/my"
