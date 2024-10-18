@@ -19,8 +19,8 @@
 #define 	MY_DEV_INDEX 			0
 
 #define 	ECU_CMD_ID 				0x70B//30D
-#define 	FAULT_AND_STATUS_ID 	0x701//30E
-#define 	ECU_STATUS_ID 			0x7E
+#define 	FAULT_AND_STATUS_ID 	0x30E
+#define 	ECU_STATUS_ID 			0x07E
 
 //==============================================================================
 // Types
@@ -201,11 +201,9 @@ Error:
 
 // ---------------------------- CORE DAEMON FOR CAN ----------------------------
 int CVICALLBACK ecu_CmdDaemon(void *functionData) {
-    float           format[3]       =   {0};
 	int 			error 			= 	0;
 	long 			count 			= 	0,
 					i 				= 	0;
-   
 	CAN_Setting		*setting 		=	(CAN_Setting *) functionData;
 	ErrMsg			errMsg			= 	{0};
 	CAN_Frame_t		f;
@@ -222,23 +220,16 @@ int CVICALLBACK ecu_CmdDaemon(void *functionData) {
 				case FAULT_AND_STATUS_ID: // FaultAndStatus
 					memcpy(setting->fault, f.payload, 2);	
 					break;
-				case 0x7E//INFO
-					setting->status[0] = f.payload[1] & 0x0F;//MCU_MotCtrlrSts
-					setting->status[1] = 0.2*((f.payload[0]<<3 & 0x07F8U) + (f.payload[1]>>5 & 0x07U)) - 200;//MCU_MotTq
-					setting->status[3] =format[0]+ format[1]+format[2]-16000;
-				/*setting->status[3] =((f.payload[3]<<12) & 0x7000U)+((f.payload[4]<<4) & 0x0FF0U)+((f.payload[5]>>4) & 0x000FU)-16000;*/
-				     format[0]=((f.payload[3]<<12) & 0x7000U);
-					 format[1]=((f.payload[4]<<4) & 0x0FF0U);
-					 format[2]=((f.payload[5]>>4) & 0x000FU);
-					/*setting->status[3] =((f.payload[3]& 0x070U) <<12) +((f.payload[4]<<4)& 0x0FF0U)+((f.payload[5]>>4)& 0x000FU);*/
-					/*setting->status[3] = ((f.payload[3] & 0x07U<<12)+ (f.payload[4] &0xFFU<<4)+(f.payload[5] & 0x0FU>>4 ))- 16000;//MCU_MotSpd*/
+				case 0x7EU: // info
+					setting->status[0] = f.payload[1] & 0x0F;
+					setting->status[1] = 0.2*((f.payload[0]<<3 & 0x07F8U) + (f.payload[1]>>5 & 0x07U)) - 200;//motortorque
 					break;
-				case 0x10C://
-					setting->status[2] = (f.payload[6]<<8 & 0x0100U) + (f.payload[7]&0XFFU ); //MotBusU
-					setting->temp[0] = 0;
-					/*setting->temp[0] = f.payload[4] - 40; */
+				case 0x149U:
+					setting->status[2] = (f.payload[1]<<1 & 0x01FEU) + (f.payload[2]>>7 & 0x01U); 
+					setting->temp[0] = f.payload[4] - 40; 
 					break;
-				case 0x304U:					
+				case 0x304U:
+					setting->status[3] = ((f.payload[3]<<7 & 0x7F80U) + (f.payload[4]>>1 & 0x007FU)) - 16000;
 					setting->temp[1] = f.payload[5] - 40;
 					setting->temp[2] = f.payload[6] - 40;
 					break;

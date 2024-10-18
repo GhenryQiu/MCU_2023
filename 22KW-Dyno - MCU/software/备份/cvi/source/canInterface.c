@@ -96,10 +96,10 @@ int CAN_SetControlMode(unsigned char controlMode, char errorMsg[]) {
 	return error;
 }
 
-int CAN_GetStatus(float status [], unsigned char fault[], float temperature[], char errorMsg[]) {
+int CAN_GetStatus(float status[], unsigned char fault[], float temperature[], char errorMsg[]) {
 	int 	error 	=	0;
 	if (canSetting) {
-		memcpy(status, canSetting->status, sizeof(float)*4) ;//unsigned short
+		memcpy(status, canSetting->status, sizeof(float )*4);//unsigned short
 		memcpy(fault, canSetting->fault, 2);
 		memcpy(temperature, canSetting->temp, sizeof(float)*3);//sizeof 返回 3个浮点数 temperature值
 	} else {

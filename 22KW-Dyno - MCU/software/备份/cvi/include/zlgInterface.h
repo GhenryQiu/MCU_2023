@@ -70,7 +70,7 @@ typedef struct {
 	unsigned short 			torqueCmd;
 	float 					temp[3];
 	unsigned char 			fault[2];
-	float                  status[4];
+	float   				status[4];
 	CmtThreadFunctionID 	thid;
 } CAN_Setting;
 

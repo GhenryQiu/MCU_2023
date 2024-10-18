@@ -1,6 +1,6 @@
 [Workspace Header]
 Version = 1900
-Pathname = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/DbgGui.cws"
+Pathname = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/DbgGui.cws"
 CVI Dir = "/c/program files (x86)/national instruments/cvi2019"
 CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
 CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2019"
@@ -12,11 +12,11 @@ VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
 Number of Projects = 1
 Active Project = 1
 Project 0001 = "DbgGui.prj"
-Drag Bar Left = 340
+Drag Bar Left = 387
 Window Top = 113
-Window Left = 100
-Window Bottom = 1121
-Window Right = 1874
+Window Left = 508
+Window Bottom = 1264
+Window Right = 2861
 Maximized = False
 Maximized Children = True
 Max32 Number Of Errors = 20
@@ -32,7 +32,7 @@ Break At First Statement = False
 Sort Type = "File Name"
 Number of Opened Files = 11
 Window Confinement Region Enabled = True
-MainColumnWidth = 323
+MainColumnWidth = 370
 FileDateColumnWidth = 70
 FileSizeColumnWidth = 70
 
@@ -46,31 +46,28 @@ Batch Build Release = False
 Batch Build Debug = False
 
 [File 0001]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/zl"
-Path Line0002 = "gInterface.h"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/include/zlgInterface.h"
 File Type = "Include"
-Disk Date = 3804632198
+Disk Date = 3782794238
 In Projects = "1,"
 Source Window State = "1,74,74,74,0,13,0,0,3,0,0,0,0,0,0,0,35,0,74,13,401,721,1,0,"
 Window Top = 31
 Window Z-Order = 6
 
 [File 0002]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/gui/DbgGui"
-Path Line0002 = ".c"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/gui/DbgGui.c"
 File Type = "CSource"
-Disk Date = 3782945548
+Disk Date = 3782794866
 In Projects = "1,"
 Source Window State = "1,194,194,194,6,6,6,0,0,0,0,0,0,0,0,0,176,0,194,6,341,630,1,0,"
 Window Top = 33
 Window Left = 10
-Window Z-Order = 2
+Window Z-Order = 1
 
 [File 0003]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/gui/can_gu"
-Path Line0002 = "i.h"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/gui/can_gui.h"
 File Type = "Include"
-Disk Date = 3782945548
+Disk Date = 3782499250
 In Projects = "1,"
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,401,721,1,0,"
 Window Top = 33
@@ -78,10 +75,9 @@ Window Left = 10
 Window Z-Order = 7
 
 [File 0004]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/cJ"
-Path Line0002 = "SON.h"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/include/cJSON.h"
 File Type = "Include"
-Disk Date = 3782945548
+Disk Date = 3782499250
 In Projects = "1,"
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,401,721,1,0,"
 Window Top = 95
@@ -89,33 +85,30 @@ Window Left = 42
 Window Z-Order = 11
 
 [File 0005]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/zlg"
-Path Line0002 = "Interface.c"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/source/zlgInterface.c"
 File Type = "CSource"
-Disk Date = 3804632219
+Disk Date = 3782794270
 In Projects = "1,"
-Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,453,1924,1,0,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,453,2111,1,0,"
 Window Top = 157
 Window Left = 74
-Window Z-Order = 3
+Window Z-Order = 2
 
 [File 0006]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/gui/can_gu"
-Path Line0002 = "i.uir"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/gui/can_gui.uir"
 File Type = "User Interface Resource"
-Disk Date = 3782945548
+Disk Date = 3782499250
 In Projects = "1,"
 Window Top = 33
 Window Left = 10
 Window Height = 341
 Window Width = 630
-Window Z-Order = 1
+Window Z-Order = 3
 
 [File 0007]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/cJS"
-Path Line0002 = "ON.c"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/source/cJSON.c"
 File Type = "CSource"
-Disk Date = 3782945548
+Disk Date = 3782499250
 In Projects = "1,"
 Source Window State = "1,599,599,599,18,18,18,0,0,0,0,0,0,0,0,0,565,0,599,18,401,721,1,0,"
 Window Top = 95
@@ -123,10 +116,9 @@ Window Left = 42
 Window Z-Order = 8
 
 [File 0008]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/Dyn"
-Path Line0002 = "o_API.c"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/source/Dyno_API.c"
 File Type = "CSource"
-Disk Date = 3782945548
+Disk Date = 3782499250
 In Projects = "1,"
 Source Window State = "1,308,308,308,4,19,4,0,3,0,0,0,0,0,0,0,280,0,308,19,401,693,1,0,"
 Window Top = 33
@@ -134,10 +126,9 @@ Window Left = 10
 Window Z-Order = 4
 
 [File 0009]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/my_"
-Path Line0002 = "utility.c"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/source/my_utility.c"
 File Type = "CSource"
-Disk Date = 3782945548
+Disk Date = 3782499250
 In Projects = "1,"
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,0,0,0,401,721,1,0,"
 Window Top = 64
@@ -145,10 +136,9 @@ Window Left = 26
 Window Z-Order = 9
 
 [File 0010]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/yok"
-Path Line0002 = "ogawa.c"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/source/yokogawa.c"
 File Type = "CSource"
-Disk Date = 3782945548
+Disk Date = 3782499250
 In Projects = "1,"
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,401,721,1,0,"
 Window Top = 33
@@ -156,10 +146,9 @@ Window Left = 10
 Window Z-Order = 10
 
 [File 0011]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/Dy"
-Path Line0002 = "no_API.h"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/include/Dyno_API.h"
 File Type = "Include"
-Disk Date = 3782945548
+Disk Date = 3782499250
 In Projects = "1,"
 Source Window State = "1,63,63,63,4,4,4,0,0,0,0,0,0,0,0,0,23,0,63,4,401,721,1,0,"
 Window Top = 64
@@ -167,92 +156,74 @@ Window Left = 26
 Window Z-Order = 5
 
 [File 0012]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/zlg/Contro"
-Path Line0002 = "lCAN.h"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/zlg/ControlCAN.h"
 File Type = "Include"
-Disk Date = 3782945548
+Disk Date = 3782499250
 In Projects = "1,"
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,0,0,0,401,721,1,0,"
 Window Top = 64
 Window Left = 26
 
 [File 0013]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/gui/DbgGui"
-Path Line0002 = ".h"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/gui/DbgGui.h"
 File Type = "Include"
-Disk Date = 3782945548
+Disk Date = 3782499250
 In Projects = "1,"
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,401,721,1,0,"
 Window Top = 126
 Window Left = 58
 
 [File 0014]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/gi"
-Path Line0002 = "t_version.h"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/include/git_version.h"
 File Type = "Include"
-Disk Date = 3782945548
+Disk Date = 3782499250
 In Projects = "1,"
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,401,721,1,0,"
 Window Top = 188
 Window Left = 90
 
 [File 0015]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/my"
-Path Line0002 = "_utility.h"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/include/my_utility.h"
 File Type = "Include"
-Disk Date = 3782945548
+Disk Date = 3782499250
 In Projects = "1,"
 Source Window State = "1,63,63,63,21,21,21,0,0,0,0,0,0,0,0,0,10,0,63,21,401,721,1,0,"
 Window Top = 157
 Window Left = 74
 
 [File 0016]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/yo"
-Path Line0002 = "kogawa.h"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/include/yokogawa.h"
 File Type = "Include"
-Disk Date = 3782945548
+Disk Date = 3782499250
 In Projects = "1,"
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,401,721,1,0,"
 Window Top = 157
 Window Left = 74
 
 [File 0017]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/zlg/Contro"
-Path Line0002 = "lCAN.lib"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/zlg/ControlCAN.lib"
 File Type = "Library"
-Disk Date = 3782945548
+Disk Date = 3782499250
 In Projects = "1,"
 
 [File 0018]
-Path Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/zlg/Contro"
-Path Line0002 = "lCAN.dll"
+Path = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/zlg/ControlCAN.dll"
 File Type = "DLL"
-Disk Date = 3782945548
+Disk Date = 3782499250
 In Projects = "1,"
 
 [Tab Order]
-Tab 0001 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/cJ"
-Tab 0001 Line0002 = "SON.h"
-Tab 0002 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/yok"
-Tab 0002 Line0002 = "ogawa.c"
-Tab 0003 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/my_"
-Tab 0003 Line0002 = "utility.c"
-Tab 0004 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/cJS"
-Tab 0004 Line0002 = "ON.c"
-Tab 0005 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/gui/can_gu"
-Tab 0005 Line0002 = "i.h"
-Tab 0006 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/zl"
-Tab 0006 Line0002 = "gInterface.h"
-Tab 0007 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/include/Dy"
-Tab 0007 Line0002 = "no_API.h"
-Tab 0008 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/Dyn"
-Tab 0008 Line0002 = "o_API.c"
-Tab 0009 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/gui/can_gu"
-Tab 0009 Line0002 = "i.uir"
-Tab 0010 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/source/zlg"
-Tab 0010 Line0002 = "Interface.c"
-Tab 0011 Line0001 = "/c/Users/Henry/Documents/GitHub/MCU_2023/22KW-Dyno - MCU/software/cvi/gui/DbgGui"
-Tab 0011 Line0002 = ".c"
+Tab 0001 = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/include/zlgInterface.h"
+Tab 0002 = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/include/cJSON.h"
+Tab 0003 = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/source/zlgInterface.c"
+Tab 0004 = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/source/yokogawa.c"
+Tab 0005 = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/source/my_utility.c"
+Tab 0006 = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/source/cJSON.c"
+Tab 0007 = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/gui/can_gui.h"
+Tab 0008 = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/include/Dyno_API.h"
+Tab 0009 = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/source/Dyno_API.c"
+Tab 0010 = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/gui/DbgGui.c"
+Tab 0011 = "/c/Dev/MCU_2023/22KW-Dyno - MCU/software/cvi/gui/can_gui.uir"
 
 [Default Build Config 0001 Debug]
 Generate Browse Info = True
