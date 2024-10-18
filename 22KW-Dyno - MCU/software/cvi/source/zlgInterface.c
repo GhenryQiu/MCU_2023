@@ -20,7 +20,7 @@
 
 #define 	ECU_CMD_ID 				0x70B//30D
 #define 	FAULT_AND_STATUS_ID 	0x701//30E
-#define 	ECU_STATUS_ID 			0x7E
+#define 	ECU_STATUS_ID 			0x07E
 
 //==============================================================================
 // Types
@@ -222,7 +222,7 @@ int CVICALLBACK ecu_CmdDaemon(void *functionData) {
 				case FAULT_AND_STATUS_ID: // FaultAndStatus
 					memcpy(setting->fault, f.payload, 2);	
 					break;
-				case 0x7E//INFO
+				case 0x07E//INFO
 					setting->status[0] = f.payload[1] & 0x0F;//MCU_MotCtrlrSts
 					setting->status[1] = 0.2*((f.payload[0]<<3 & 0x07F8U) + (f.payload[1]>>5 & 0x07U)) - 200;//MCU_MotTq
 					setting->status[3] =format[0]+ format[1]+format[2]-16000;
