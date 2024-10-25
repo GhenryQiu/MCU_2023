@@ -1,0 +1,50 @@
+[zlgCAN_Initialize]
+Class="Function"
+Prototype="int zlgCAN_Initialize(char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\zlgInterface.c:61:1"
+
+[zlgCAN_Close]
+Class="Function"
+Prototype="int zlgCAN_Close();"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\zlgInterface.c:108:1"
+
+[zlgCAN_Write]
+Class="Function"
+Prototype="int zlgCAN_Write(struct CAN_Frame_t *frame, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\zlgInterface.c:121:1"
+
+[zlgCAN_Read]
+Class="Function"
+Prototype="int zlgCAN_Read(struct CAN_Frame_t *frame, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\zlgInterface.c:145:1"
+
+[zlgCAN_Flush]
+Class="Function"
+Prototype="int zlgCAN_Flush(char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\zlgInterface.c:171:1"
+
+[zlgCAN_WaitForFrame]
+Class="Function"
+Prototype="int zlgCAN_WaitForFrame(unsigned int arbid, unsigned char *Payload, unsigned char PayloadLength, int timeoutMs, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\zlgInterface.c:184:1"
+
+[ecu_CmdDaemon]
+Class="Function"
+Prototype="int ecu_CmdDaemon(void *functionData);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\zlgInterface.c:203:1"
+
+[ecu_WriteCmd]
+Class="Function"
+Prototype="int ecu_WriteCmd(char IvtrReStCmd, char IvtrReStCmdVld, unsigned short MotTqCmd, char MotTqCmdVld, unsigned short MotSpdCmd, char MotSpdCmdVld, char GearPosnCmd, char GearPosnCmdVld, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\zlgInterface.c:263:1"
+
+[ecu_StartTorqueCtrl]
+Class="Function"
+Prototype="int ecu_StartTorqueCtrl(short MotTqCmd, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\zlgInterface.c:279:1"
+
+[ecu_StopTorqueCtrl]
+Class="Function"
+Prototype="int ecu_StopTorqueCtrl(char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\zlgInterface.c:298:1"
+

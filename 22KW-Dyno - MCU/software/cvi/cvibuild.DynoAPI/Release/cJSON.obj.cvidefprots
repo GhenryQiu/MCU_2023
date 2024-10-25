@@ -1,0 +1,370 @@
+[cJSON_GetErrorPtr]
+Class="Function"
+Prototype="const char *cJSON_GetErrorPtr() __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:77:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_GetStringValue]
+Class="Function"
+Prototype="char *cJSON_GetStringValue(struct cJSON *item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:82:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_Version]
+Class="Function"
+Prototype="const char *cJSON_Version() __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:95:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_InitHooks]
+Class="Function"
+Prototype="void cJSON_InitHooks(struct cJSON_Hooks *hooks) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:180:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_Delete]
+Class="Function"
+Prototype="void cJSON_Delete(struct cJSON *item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:224:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_SetNumberHelper]
+Class="Function"
+Prototype="double cJSON_SetNumberHelper(struct cJSON *object, double number) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:353:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_ParseWithOpts]
+Class="Function"
+Prototype="struct cJSON *cJSON_ParseWithOpts(const char *value, const char **return_parse_end, int require_null_terminated) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1010:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_Parse]
+Class="Function"
+Prototype="struct cJSON *cJSON_Parse(const char *value) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1090:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_Print]
+Class="Function"
+Prototype="char *cJSON_Print(const struct cJSON *item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1162:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_PrintUnformatted]
+Class="Function"
+Prototype="char *cJSON_PrintUnformatted(const struct cJSON *item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1167:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_PrintBuffered]
+Class="Function"
+Prototype="char *cJSON_PrintBuffered(const struct cJSON *item, int prebuffer, int fmt) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1172:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_PrintPreallocated]
+Class="Function"
+Prototype="int cJSON_PrintPreallocated(struct cJSON *item, char *buf, const int len, const int fmt) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1202:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_GetArraySize]
+Class="Function"
+Prototype="int cJSON_GetArraySize(const struct cJSON *array) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1730:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_GetArrayItem]
+Class="Function"
+Prototype="struct cJSON *cJSON_GetArrayItem(const struct cJSON *array, int index) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1772:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_GetObjectItem]
+Class="Function"
+Prototype="struct cJSON *cJSON_GetObjectItem(const struct cJSON *const object, const char *const string) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1814:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_GetObjectItemCaseSensitive]
+Class="Function"
+Prototype="struct cJSON *cJSON_GetObjectItemCaseSensitive(const struct cJSON *const object, const char *const string) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1819:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_HasObjectItem]
+Class="Function"
+Prototype="int cJSON_HasObjectItem(const struct cJSON *object, const char *string) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1824:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_AddItemToArray]
+Class="Function"
+Prototype="void cJSON_AddItemToArray(struct cJSON *array, struct cJSON *item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1888:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_AddItemToObject]
+Class="Function"
+Prototype="void cJSON_AddItemToObject(struct cJSON *object, const char *string, struct cJSON *item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1946:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_AddItemToObjectCS]
+Class="Function"
+Prototype="void cJSON_AddItemToObjectCS(struct cJSON *object, const char *string, struct cJSON *item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1952:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_AddItemReferenceToArray]
+Class="Function"
+Prototype="void cJSON_AddItemReferenceToArray(struct cJSON *array, struct cJSON *item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1957:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_AddItemReferenceToObject]
+Class="Function"
+Prototype="void cJSON_AddItemReferenceToObject(struct cJSON *object, const char *string, struct cJSON *item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1967:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_AddNullToObject]
+Class="Function"
+Prototype="struct cJSON *cJSON_AddNullToObject(struct cJSON *const object, const char *const name) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1977:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_AddTrueToObject]
+Class="Function"
+Prototype="struct cJSON *cJSON_AddTrueToObject(struct cJSON *const object, const char *const name) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:1989:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_AddFalseToObject]
+Class="Function"
+Prototype="struct cJSON *cJSON_AddFalseToObject(struct cJSON *const object, const char *const name) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2001:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_AddBoolToObject]
+Class="Function"
+Prototype="struct cJSON *cJSON_AddBoolToObject(struct cJSON *const object, const char *const name, const int boolean) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2013:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_AddNumberToObject]
+Class="Function"
+Prototype="struct cJSON *cJSON_AddNumberToObject(struct cJSON *const object, const char *const name, const double number) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2025:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_AddStringToObject]
+Class="Function"
+Prototype="struct cJSON *cJSON_AddStringToObject(struct cJSON *const object, const char *const name, const char *const string) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2037:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_AddRawToObject]
+Class="Function"
+Prototype="struct cJSON *cJSON_AddRawToObject(struct cJSON *const object, const char *const name, const char *const raw) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2049:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_AddObjectToObject]
+Class="Function"
+Prototype="struct cJSON *cJSON_AddObjectToObject(struct cJSON *const object, const char *const name) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2061:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_AddArrayToObject]
+Class="Function"
+Prototype="struct cJSON *cJSON_AddArrayToObject(struct cJSON *const object, const char *const name) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2073:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_DetachItemViaPointer]
+Class="Function"
+Prototype="struct cJSON *cJSON_DetachItemViaPointer(struct cJSON *parent, struct cJSON *const item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2085:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_DetachItemFromArray]
+Class="Function"
+Prototype="struct cJSON *cJSON_DetachItemFromArray(struct cJSON *array, int which) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2115:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_DeleteItemFromArray]
+Class="Function"
+Prototype="void cJSON_DeleteItemFromArray(struct cJSON *array, int which) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2125:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_DetachItemFromObject]
+Class="Function"
+Prototype="struct cJSON *cJSON_DetachItemFromObject(struct cJSON *object, const char *string) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2130:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_DetachItemFromObjectCaseSensitive]
+Class="Function"
+Prototype="struct cJSON *cJSON_DetachItemFromObjectCaseSensitive(struct cJSON *object, const char *string) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2137:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_DeleteItemFromObject]
+Class="Function"
+Prototype="void cJSON_DeleteItemFromObject(struct cJSON *object, const char *string) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2144:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_DeleteItemFromObjectCaseSensitive]
+Class="Function"
+Prototype="void cJSON_DeleteItemFromObjectCaseSensitive(struct cJSON *object, const char *string) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2149:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_InsertItemInArray]
+Class="Function"
+Prototype="void cJSON_InsertItemInArray(struct cJSON *array, int which, struct cJSON *newitem) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2155:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_ReplaceItemViaPointer]
+Class="Function"
+Prototype="int cJSON_ReplaceItemViaPointer(struct cJSON *const parent, struct cJSON *const item, struct cJSON *replacement) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2184:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_ReplaceItemInArray]
+Class="Function"
+Prototype="void cJSON_ReplaceItemInArray(struct cJSON *array, int which, struct cJSON *newitem) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2219:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_ReplaceItemInObject]
+Class="Function"
+Prototype="void cJSON_ReplaceItemInObject(struct cJSON *object, const char *string, struct cJSON *newitem) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2249:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_ReplaceItemInObjectCaseSensitive]
+Class="Function"
+Prototype="void cJSON_ReplaceItemInObjectCaseSensitive(struct cJSON *object, const char *string, struct cJSON *newitem) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2254:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_CreateNull]
+Class="Function"
+Prototype="struct cJSON *cJSON_CreateNull() __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2260:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_CreateTrue]
+Class="Function"
+Prototype="struct cJSON *cJSON_CreateTrue() __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2271:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_CreateFalse]
+Class="Function"
+Prototype="struct cJSON *cJSON_CreateFalse() __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2282:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_CreateBool]
+Class="Function"
+Prototype="struct cJSON *cJSON_CreateBool(int b) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2293:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_CreateNumber]
+Class="Function"
+Prototype="struct cJSON *cJSON_CreateNumber(double num) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2304:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_CreateString]
+Class="Function"
+Prototype="struct cJSON *cJSON_CreateString(const char *string) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2330:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_CreateStringReference]
+Class="Function"
+Prototype="struct cJSON *cJSON_CreateStringReference(const char *string) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2347:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_CreateObjectReference]
+Class="Function"
+Prototype="struct cJSON *cJSON_CreateObjectReference(const struct cJSON *child) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2359:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_CreateArrayReference]
+Class="Function"
+Prototype="struct cJSON *cJSON_CreateArrayReference(const struct cJSON *child) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2370:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_CreateRaw]
+Class="Function"
+Prototype="struct cJSON *cJSON_CreateRaw(const char *raw) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2380:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_CreateArray]
+Class="Function"
+Prototype="struct cJSON *cJSON_CreateArray() __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2397:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_CreateObject]
+Class="Function"
+Prototype="struct cJSON *cJSON_CreateObject() __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2408:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_CreateIntArray]
+Class="Function"
+Prototype="struct cJSON *cJSON_CreateIntArray(const int *numbers, int count) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2420:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_CreateFloatArray]
+Class="Function"
+Prototype="struct cJSON *cJSON_CreateFloatArray(const float *numbers, int count) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2455:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_CreateDoubleArray]
+Class="Function"
+Prototype="struct cJSON *cJSON_CreateDoubleArray(const double *numbers, int count) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2491:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_CreateStringArray]
+Class="Function"
+Prototype="struct cJSON *cJSON_CreateStringArray(const char **strings, int count) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2527:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_Duplicate]
+Class="Function"
+Prototype="struct cJSON *cJSON_Duplicate(const struct cJSON *item, int recurse) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2564:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_Minify]
+Class="Function"
+Prototype="void cJSON_Minify(char *json) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2692:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_IsInvalid]
+Class="Function"
+Prototype="int cJSON_IsInvalid(const struct cJSON *const item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2740:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_IsFalse]
+Class="Function"
+Prototype="int cJSON_IsFalse(const struct cJSON *const item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2750:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_IsTrue]
+Class="Function"
+Prototype="int cJSON_IsTrue(const struct cJSON *const item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2760:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_IsBool]
+Class="Function"
+Prototype="int cJSON_IsBool(const struct cJSON *const item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2771:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_IsNull]
+Class="Function"
+Prototype="int cJSON_IsNull(const struct cJSON *const item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2780:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_IsNumber]
+Class="Function"
+Prototype="int cJSON_IsNumber(const struct cJSON *const item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2790:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_IsString]
+Class="Function"
+Prototype="int cJSON_IsString(const struct cJSON *const item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2800:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_IsArray]
+Class="Function"
+Prototype="int cJSON_IsArray(const struct cJSON *const item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2810:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_IsObject]
+Class="Function"
+Prototype="int cJSON_IsObject(const struct cJSON *const item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2820:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_IsRaw]
+Class="Function"
+Prototype="int cJSON_IsRaw(const struct cJSON *const item) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2830:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_Compare]
+Class="Function"
+Prototype="int cJSON_Compare(const struct cJSON *const a, const struct cJSON *const b, const int case_sensitive) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2840:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_malloc]
+Class="Function"
+Prototype="void *cJSON_malloc(unsigned int size) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2965:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+
+[cJSON_free]
+Class="Function"
+Prototype="void cJSON_free(void *object) __declspec(dllexport);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\cJSON.c:2970:1 <Spelling=c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\include\cJSON.h:66:30>"
+

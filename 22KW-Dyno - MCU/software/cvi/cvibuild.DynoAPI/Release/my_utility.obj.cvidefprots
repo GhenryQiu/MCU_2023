@@ -1,0 +1,105 @@
+[utility_getAbsolutePath]
+Class="Function"
+Prototype="char *utility_getAbsolutePath(const char *relativePath, char *fullPath);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:94:1"
+
+[utility_setCtrlArray]
+Class="Function"
+Prototype="int utility_setCtrlArray(int panel, int controlArray, enum CtrlArray_Mode mode, int value, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:108:1"
+
+[utility_hookConsole]
+Class="Function"
+Prototype="int utility_hookConsole(int panel, int list, int progressBar);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:138:1"
+
+[utility_resetConsole]
+Class="Function"
+Prototype="int utility_resetConsole();"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:163:1"
+
+[utility_destroyConsole]
+Class="Function"
+Prototype="int utility_destroyConsole();"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:178:1"
+
+[utility_enableConsole]
+Class="Function"
+Prototype="int utility_enableConsole(enum Console_Mode mode, short enable);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:191:1"
+
+[utility_puts]
+Class="Function"
+Prototype="int utility_puts(const char *reportText);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:205:1"
+
+[utility_putHex]
+Class="Function"
+Prototype="int utility_putHex(const unsigned char *reportText, int dataSize);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:224:1"
+
+[utility_updateText]
+Class="Function"
+Prototype="int utility_updateText(const char *reportText);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:252:1"
+
+[utility_getExecutionTime]
+Class="Function"
+Prototype="double utility_getExecutionTime(union CVIAbsoluteTime start);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:265:1"
+
+[utility_getTimeOut]
+Class="Function"
+Prototype="union CVIAbsoluteTime utility_getTimeOut(union CVIAbsoluteTime *start, double durationSec);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:278:1"
+
+[utility_isTimeout]
+Class="Function"
+Prototype="int utility_isTimeout(union CVIAbsoluteTime *timeout);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:289:1"
+
+[utility_calculateElapsedPercentage]
+Class="Function"
+Prototype="double utility_calculateElapsedPercentage(union CVIAbsoluteTime *start, double duration);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:300:1"
+
+[utility_getTimestamp]
+Class="Function"
+Prototype="char *utility_getTimestamp(char *time_stamp, short standard);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:312:1"
+
+[utility_doesFileExists]
+Class="Function"
+Prototype="int utility_doesFileExists(const char *filePath, char basename[], char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:342:1"
+
+[utility_checkFolderEx]
+Class="Function"
+Prototype="int utility_checkFolderEx(const char *folderPath, short createIfNotExist, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:365:1"
+
+[utility_checkVisaName]
+Class="Function"
+Prototype="int utility_checkVisaName(const char *visa, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:398:1"
+
+[utility_insertTabPages]
+Class="Function"
+Prototype="int utility_insertTabPages(int panel, int tabCtrl, struct TabPageCfg tabCfg[], int numTabPage, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:419:1"
+
+[utility_launchProgressBar]
+Class="Function"
+Prototype="int utility_launchProgressBar(const char *callerFuncName, int totalSec, int (*f)(const char *), short currentStatus, short continuousMode, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:444:1"
+
+[utility_stopProgressBar]
+Class="Function"
+Prototype="int utility_stopProgressBar(int (*f)(const char *), int error, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:481:1"
+
+[utility_progressBarDaemon]
+Class="Function"
+Prototype="int utility_progressBarDaemon(void *functionData);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\my_utility.c:507:1"
+

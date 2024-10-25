@@ -1,0 +1,346 @@
+#include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
+
+
+2 24 "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\manifest.xml"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  65535  ""
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DynoAPI (Release x86)\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "DynoAPI\0"
+            VALUE "LegalCopyright", "Copyright   2024\0"
+            VALUE "OriginalFilename", "DynoAPI.dll\0"
+            VALUE "ProductName", " DynoAPI\0"
+            VALUE "ProductVersion", "1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END
+
+CVIDLLexports CVIDLLprototypes
+{
+   "int CAN_Close();"
+   "\n",
+   "int CAN_GetStatus(float status[], unsigned char fault[], float temperature[], char errorMsg[]);"
+   "\n",
+   "int CAN_Initialize(char errorMsg[]);"
+   "\n",
+   "int CAN_LaunchDaemon(char errorMsg[]);"
+   "\n",
+   "int CAN_SetControlMode(unsigned char controlMode, char errorMsg[]);"
+   "\n",
+   "int CAN_SetToruqe(float torqueCmd, char errorMsg[]);"
+   "\n",
+   "int CAN_StopDaemon();"
+   "\n",
+   "unsigned int CRC16_2(unsigned char *buf, int len);"
+   "\n",
+   "int DYNO_CalculateCrc(unsigned char buffer[], unsigned char dataSize);"
+   "\n",
+   "int DYNO_ConfigurePS(float voltage, float current, unsigned char enable, float ovp, float ocp, char errorMsg[]);"
+   "\n",
+   "int DYNO_ConfigurePowerAnalyzer(const char *ipAddress, char errorMsg[]);"
+   "\n",
+   "int DYNO_Destroy();"
+   "\n",
+   "int DYNO_EnableChiller(unsigned char enable, char errorMsg[]);"
+   "\n",
+   "int DYNO_Initialize(const char *visa, char loadController, char torqueTransducer, char tempSensor, char chiller, char fluidSensor, const char *hvps, char errorMsg[]);"
+   "\n",
+   "int DYNO_InitializeFromJson(const char *cfgFilePath, char errorMsg[]);"
+   "\n",
+   "int DYNO_OpenRS232(const char *visa, char errorMsg[]);"
+   "\n",
+   "int DYNO_OpenVisa(const char *visa, char errorMsg[]);"
+   "\n",
+   "int DYNO_ReadModbus(double *torque, double *speed, double *psVoltage, double *psCurrent, char errorMsg[]);"
+   "\n",
+   "int DYNO_ReadPS(float *outputVoltage, float *outputCurrent, char *isStopped, char *emergencyState, char *alertCode, char errorMsg[]);"
+   "\n",
+   "int DYNO_ReadPowerAnalyzer(float data[], char errorMsg[]);"
+   "\n",
+   "int DYNO_ReadTorque(double *torque, double *speed, char errorMsg[]);"
+   "\n",
+   "int DYNO_SetLoadMode(enum Load_Mode loadMode, char errorMsg[]);"
+   "\n",
+   "int DYNO_SetLoadSpeed(unsigned short loadSpeed, char errorMsg[]);"
+   "\n",
+   "int DYNO_SetTorqSpeedCallback(int (*CallbackPtr)(double *, double *, char *));"
+   "\n",
+   "int DYNO_StartLoad(short start, char errorMsg[]);"
+   "\n",
+   "int DYNO_tcpQuery(unsigned char cmd[], unsigned char rxbuf[], short rxBufSize, int waitMs, char errorMsg[]);"
+   "\n",
+   "int DYNO_visaQuery(unsigned char cmd[], unsigned char rxbuf[], short rxBufSize, int waitMs, char errorMsg[]);"
+   "\n",
+   "int LOAD_SetTorque(double torqueSet, char errorMsg[]);"
+   "\n",
+   "int LOAD_SetTorqueMode(unsigned char enable, char errorMsg[]);"
+   "\n",
+   "int Modbus_ReadTorque(double *torque, double *speed, char errorMsg[]);"
+   "\n",
+   "int RS232_ReadTorque(double *torque, double *speed, char errorMsg[]);"
+   "\n",
+   "int YKGW_BuildSetting(char errorMsg[]);"
+   "\n",
+   "int YKGW_Close(short destroyAll);"
+   "\n",
+   "int YKGW_Config(const char *ipAddress, char errorMsg[]);"
+   "\n",
+   "int YKGW_ConfigItemList(char errorMsg[]);"
+   "\n",
+   "int YKGW_FetchItemNames(char ***itemList, int *numItem, char errorMsg[]);"
+   "\n",
+   "int YKGW_Initialize(char errorMsg[]);"
+   "\n",
+   "int YKGW_Measure(char errorMsg[]);"
+   "\n",
+   "int YKGW_Query(const char *cmd, char rxbuf[], short waitMs, char errorMsg[]);"
+   "\n",
+   "int YKGW_Read(double *data, int numSignal, char errorMsg[]);"
+   "\n",
+   "int YKGW_Write(const char *cmd, char errorMsg[]);"
+   "\n",
+   "int YokogawaDaemon(void *functionData);"
+   "\n",
+   "float buf2data_rs232(const unsigned char *f);"
+   "\n",
+   "float buf2speed(const char *f);"
+   "\n",
+   "float buf2torque(const char *f);"
+   "\n",
+   "unsigned char *buildPSCmd(unsigned char cmd[], unsigned char mode, float data);"
+   "\n",
+   "struct cJSON *cJSON_AddArrayToObject(struct cJSON *const object, const char *const name) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_AddBoolToObject(struct cJSON *const object, const char *const name, const int boolean) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_AddFalseToObject(struct cJSON *const object, const char *const name) __declspec(dllexport);"
+   "\n",
+   "void cJSON_AddItemReferenceToArray(struct cJSON *array, struct cJSON *item) __declspec(dllexport);"
+   "\n",
+   "void cJSON_AddItemReferenceToObject(struct cJSON *object, const char *string, struct cJSON *item) __declspec(dllexport);"
+   "\n",
+   "void cJSON_AddItemToArray(struct cJSON *array, struct cJSON *item) __declspec(dllexport);"
+   "\n",
+   "void cJSON_AddItemToObject(struct cJSON *object, const char *string, struct cJSON *item) __declspec(dllexport);"
+   "\n",
+   "void cJSON_AddItemToObjectCS(struct cJSON *object, const char *string, struct cJSON *item) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_AddNullToObject(struct cJSON *const object, const char *const name) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_AddNumberToObject(struct cJSON *const object, const char *const name, const double number) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_AddObjectToObject(struct cJSON *const object, const char *const name) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_AddRawToObject(struct cJSON *const object, const char *const name, const char *const raw) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_AddStringToObject(struct cJSON *const object, const char *const name, const char *const string) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_AddTrueToObject(struct cJSON *const object, const char *const name) __declspec(dllexport);"
+   "\n",
+   "int cJSON_Compare(const struct cJSON *const a, const struct cJSON *const b, const int case_sensitive) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_CreateArray() __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_CreateArrayReference(const struct cJSON *child) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_CreateBool(int b) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_CreateDoubleArray(const double *numbers, int count) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_CreateFalse() __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_CreateFloatArray(const float *numbers, int count) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_CreateIntArray(const int *numbers, int count) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_CreateNull() __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_CreateNumber(double num) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_CreateObject() __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_CreateObjectReference(const struct cJSON *child) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_CreateRaw(const char *raw) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_CreateString(const char *string) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_CreateStringArray(const char **strings, int count) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_CreateStringReference(const char *string) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_CreateTrue() __declspec(dllexport);"
+   "\n",
+   "void cJSON_Delete(struct cJSON *item) __declspec(dllexport);"
+   "\n",
+   "void cJSON_DeleteItemFromArray(struct cJSON *array, int which) __declspec(dllexport);"
+   "\n",
+   "void cJSON_DeleteItemFromObject(struct cJSON *object, const char *string) __declspec(dllexport);"
+   "\n",
+   "void cJSON_DeleteItemFromObjectCaseSensitive(struct cJSON *object, const char *string) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_DetachItemFromArray(struct cJSON *array, int which) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_DetachItemFromObject(struct cJSON *object, const char *string) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_DetachItemFromObjectCaseSensitive(struct cJSON *object, const char *string) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_DetachItemViaPointer(struct cJSON *parent, struct cJSON *const item) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_Duplicate(const struct cJSON *item, int recurse) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_GetArrayItem(const struct cJSON *array, int index) __declspec(dllexport);"
+   "\n",
+   "int cJSON_GetArraySize(const struct cJSON *array) __declspec(dllexport);"
+   "\n",
+   "const char *cJSON_GetErrorPtr() __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_GetObjectItem(const struct cJSON *const object, const char *const string) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_GetObjectItemCaseSensitive(const struct cJSON *const object, const char *const string) __declspec(dllexport);"
+   "\n",
+   "char *cJSON_GetStringValue(struct cJSON *item) __declspec(dllexport);"
+   "\n",
+   "int cJSON_HasObjectItem(const struct cJSON *object, const char *string) __declspec(dllexport);"
+   "\n",
+   "void cJSON_InitHooks(struct cJSON_Hooks *hooks) __declspec(dllexport);"
+   "\n",
+   "void cJSON_InsertItemInArray(struct cJSON *array, int which, struct cJSON *newitem) __declspec(dllexport);"
+   "\n",
+   "int cJSON_IsArray(const struct cJSON *const item) __declspec(dllexport);"
+   "\n",
+   "int cJSON_IsBool(const struct cJSON *const item) __declspec(dllexport);"
+   "\n",
+   "int cJSON_IsFalse(const struct cJSON *const item) __declspec(dllexport);"
+   "\n",
+   "int cJSON_IsInvalid(const struct cJSON *const item) __declspec(dllexport);"
+   "\n",
+   "int cJSON_IsNull(const struct cJSON *const item) __declspec(dllexport);"
+   "\n",
+   "int cJSON_IsNumber(const struct cJSON *const item) __declspec(dllexport);"
+   "\n",
+   "int cJSON_IsObject(const struct cJSON *const item) __declspec(dllexport);"
+   "\n",
+   "int cJSON_IsRaw(const struct cJSON *const item) __declspec(dllexport);"
+   "\n",
+   "int cJSON_IsString(const struct cJSON *const item) __declspec(dllexport);"
+   "\n",
+   "int cJSON_IsTrue(const struct cJSON *const item) __declspec(dllexport);"
+   "\n",
+   "void cJSON_Minify(char *json) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_Parse(const char *value) __declspec(dllexport);"
+   "\n",
+   "struct cJSON *cJSON_ParseWithOpts(const char *value, const char **return_parse_end, int require_null_terminated) __declspec(dllexport);"
+   "\n",
+   "char *cJSON_Print(const struct cJSON *item) __declspec(dllexport);"
+   "\n",
+   "char *cJSON_PrintBuffered(const struct cJSON *item, int prebuffer, int fmt) __declspec(dllexport);"
+   "\n",
+   "int cJSON_PrintPreallocated(struct cJSON *item, char *buf, const int len, const int fmt) __declspec(dllexport);"
+   "\n",
+   "char *cJSON_PrintUnformatted(const struct cJSON *item) __declspec(dllexport);"
+   "\n",
+   "void cJSON_ReplaceItemInArray(struct cJSON *array, int which, struct cJSON *newitem) __declspec(dllexport);"
+   "\n",
+   "void cJSON_ReplaceItemInObject(struct cJSON *object, const char *string, struct cJSON *newitem) __declspec(dllexport);"
+   "\n",
+   "void cJSON_ReplaceItemInObjectCaseSensitive(struct cJSON *object, const char *string, struct cJSON *newitem) __declspec(dllexport);"
+   "\n",
+   "int cJSON_ReplaceItemViaPointer(struct cJSON *const parent, struct cJSON *const item, struct cJSON *replacement) __declspec(dllexport);"
+   "\n",
+   "double cJSON_SetNumberHelper(struct cJSON *object, double number) __declspec(dllexport);"
+   "\n",
+   "const char *cJSON_Version() __declspec(dllexport);"
+   "\n",
+   "void cJSON_free(void *object) __declspec(dllexport);"
+   "\n",
+   "void *cJSON_malloc(unsigned int size) __declspec(dllexport);"
+   "\n",
+   "int ecu_CmdDaemon(void *functionData);"
+   "\n",
+   "int ecu_StartTorqueCtrl(short MotTqCmd, char errorMsg[]);"
+   "\n",
+   "int ecu_StopTorqueCtrl(char errorMsg[]);"
+   "\n",
+   "int ecu_WriteCmd(char IvtrReStCmd, char IvtrReStCmdVld, unsigned short MotTqCmd, char MotTqCmdVld, unsigned short MotSpdCmd, char MotSpdCmdVld, char GearPosnCmd, char GearPosnCmdVld, char errorMsg[]);"
+   "\n",
+   "double utility_calculateElapsedPercentage(union CVIAbsoluteTime *start, double duration);"
+   "\n",
+   "int utility_checkFolderEx(const char *folderPath, short createIfNotExist, char errorMsg[]);"
+   "\n",
+   "int utility_checkVisaName(const char *visa, char errorMsg[]);"
+   "\n",
+   "int utility_destroyConsole();"
+   "\n",
+   "int utility_doesFileExists(const char *filePath, char basename[], char errorMsg[]);"
+   "\n",
+   "int utility_enableConsole(enum Console_Mode mode, short enable);"
+   "\n",
+   "char *utility_getAbsolutePath(const char *relativePath, char *fullPath);"
+   "\n",
+   "double utility_getExecutionTime(union CVIAbsoluteTime start);"
+   "\n",
+   "union CVIAbsoluteTime utility_getTimeOut(union CVIAbsoluteTime *start, double durationSec);"
+   "\n",
+   "char *utility_getTimestamp(char *time_stamp, short standard);"
+   "\n",
+   "int utility_hookConsole(int panel, int list, int progressBar);"
+   "\n",
+   "int utility_insertTabPages(int panel, int tabCtrl, struct TabPageCfg tabCfg[], int numTabPage, char errorMsg[]);"
+   "\n",
+   "int utility_isTimeout(union CVIAbsoluteTime *timeout);"
+   "\n",
+   "int utility_launchProgressBar(const char *callerFuncName, int totalSec, int (*f)(const char *), short currentStatus, short continuousMode, char errorMsg[]);"
+   "\n",
+   "int utility_progressBarDaemon(void *functionData);"
+   "\n",
+   "int utility_putHex(const unsigned char *reportText, int dataSize);"
+   "\n",
+   "int utility_puts(const char *reportText);"
+   "\n",
+   "int utility_resetConsole();"
+   "\n",
+   "int utility_setCtrlArray(int panel, int controlArray, enum CtrlArray_Mode mode, int value, char errorMsg[]);"
+   "\n",
+   "int utility_stopProgressBar(int (*f)(const char *), int error, char errorMsg[]);"
+   "\n",
+   "int utility_updateText(const char *reportText);"
+   "\n",
+   "int zlgCAN_Close();"
+   "\n",
+   "int zlgCAN_Flush(char errorMsg[]);"
+   "\n",
+   "int zlgCAN_Initialize(char errorMsg[]);"
+   "\n",
+   "int zlgCAN_Read(struct CAN_Frame_t *frame, char errorMsg[]);"
+   "\n",
+   "int zlgCAN_WaitForFrame(unsigned int arbid, unsigned char *Payload, unsigned char PayloadLength, int timeoutMs, char errorMsg[]);"
+   "\n",
+   "int zlgCAN_Write(struct CAN_Frame_t *frame, char errorMsg[]);"
+   "\n",
+   "\0"
+}

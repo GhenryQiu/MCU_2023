@@ -1,0 +1,100 @@
+HDRS = 	"C:\\Users\\Public\\Documents\\National Instruments\\TestStand 2019 (32-bit)\\AdapterSupport\\CVI"
+	"C:\\Program Files (x86)\\National Instruments\\TestStand 2019\\API\\DLLInterfaces"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr\\TestStand\\API"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2019\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "canInterface.c" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\source" ;
+LOCATE on "canInterface.h" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\include" ;
+LOCATE on "cJSON.c" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\source" ;
+LOCATE on "cJSON.h" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\include" ;
+LOCATE on "ControlCAN.h" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\zlg" ;
+LOCATE on "Dyno_API.c" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\source" ;
+LOCATE on "Dyno_API.h" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\include" ;
+LOCATE on "git_version.h" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\include" ;
+LOCATE on "my_utility.c" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\source" ;
+LOCATE on "my_utility.h" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\include" ;
+LOCATE on "yokogawa.c" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\source" ;
+LOCATE on "yokogawa.h" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\include" ;
+LOCATE on "zlgInterface.c" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\source" ;
+LOCATE on "zlgInterface.h" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\include" ;
+Object "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\canInterface.obj" : "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\source\\canInterface.c" ;
+FILENUM on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\canInterface.obj" = 1 ;
+DEFPROTS on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\canInterface.obj" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\canInterface.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\canInterface.obj" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\canInterface.obj.out" ;
+PrjObjects += "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\canInterface.obj" ;
+Object "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\cJSON.obj" : "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\source\\cJSON.c" ;
+FILENUM on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\cJSON.obj" = 2 ;
+DEFPROTS on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\cJSON.obj" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\cJSON.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\cJSON.obj" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\cJSON.obj.out" ;
+PrjObjects += "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\cJSON.obj" ;
+Object "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\Dyno_API.obj" : "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\source\\Dyno_API.c" ;
+FILENUM on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\Dyno_API.obj" = 3 ;
+DEFPROTS on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\Dyno_API.obj" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\Dyno_API.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\Dyno_API.obj" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\Dyno_API.obj.out" ;
+PrjObjects += "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\Dyno_API.obj" ;
+Object "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\my_utility.obj" : "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\source\\my_utility.c" ;
+FILENUM on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\my_utility.obj" = 4 ;
+DEFPROTS on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\my_utility.obj" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\my_utility.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\my_utility.obj" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\my_utility.obj.out" ;
+PrjObjects += "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\my_utility.obj" ;
+Object "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\yokogawa.obj" : "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\source\\yokogawa.c" ;
+FILENUM on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\yokogawa.obj" = 5 ;
+DEFPROTS on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\yokogawa.obj" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\yokogawa.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\yokogawa.obj" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\yokogawa.obj.out" ;
+PrjObjects += "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\yokogawa.obj" ;
+Object "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\zlgInterface.obj" : "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\source\\zlgInterface.c" ;
+FILENUM on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\zlgInterface.obj" = 6 ;
+DEFPROTS on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\zlgInterface.obj" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\zlgInterface.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\zlgInterface.obj" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\zlgInterface.obj.out" ;
+PrjObjects += "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\zlgInterface.obj" ;
+Object "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\canInterface.h.hdefs" : "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\include\\canInterface.h" ;
+FILENUM on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\canInterface.h.hdefs" = 7 ;
+OUTFILE on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\canInterface.h.hdefs" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\canInterface.h.hdefs.out" ;
+Object "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\Dyno_API.h.hdefs" : "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\include\\Dyno_API.h" ;
+FILENUM on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\Dyno_API.h.hdefs" = 8 ;
+OUTFILE on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\Dyno_API.h.hdefs" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\Dyno_API.h.hdefs.out" ;
+Object "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\yokogawa.h.hdefs" : "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\include\\yokogawa.h" ;
+FILENUM on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\yokogawa.h.hdefs" = 9 ;
+OUTFILE on "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\yokogawa.h.hdefs" = "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\yokogawa.h.hdefs.out" ;
+PreLinkInputs += "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\resources.in.rc" ;
+PreLinkInputs += $(PrjObjects) $(InstrObjects) ;
+PreLinkOutputs += "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\resources.out.rc" ;
+PreLinkOutputs += "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\DynoAPI.dll.defs" ;
+PreLink $(PreLinkOutputs) : $(PreLinkInputs) ;
+Depends "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\DynoAPI.dll" : "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\DynoAPI.dll.defs" ;
+Object "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\resources.res" : "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\resources.out.rc" ;
+Depends "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\resources.res" : $(PreLinkOutputs) ;
+Depends "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\resources.res" "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\resources.out.rc" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\resources.res" : "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\manifest.xml" ;
+MainFromObjects "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\DynoAPI.dll" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\DynoAPI.dll" : "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\link_options.txt" ;
+Depends "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\DynoAPI.dll" : "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\dependencies.lnk.in" ;
+Depends "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\DynoAPI.dll" : "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\resources.res" ;
+Depends all : "c:\\Users\\Henry\\Documents\\GitHub\\MCU_2023\\22KW-Dyno - MCU\\software\\cvi\\cvibuild.DynoAPI\\Release\\DynoAPI.dll" ;

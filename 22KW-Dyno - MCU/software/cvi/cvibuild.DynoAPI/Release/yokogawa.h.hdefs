@@ -1,0 +1,28 @@
+[YKGW_Config]
+Class="Function"
+Prototype="int YKGW_Config(const char *ipAddress, char errorMsg[]);"
+
+[YKGW_Initialize]
+Class="Function"
+Prototype="int YKGW_Initialize(char errorMsg[]);"
+
+[YKGW_Close]
+Class="Function"
+Prototype="int YKGW_Close(short destroyAll);"
+
+[YKGW_Measure]
+Class="Function"
+Prototype="int YKGW_Measure(char errorMsg[]);"
+
+[YKGW_Read]
+Class="Function"
+Prototype="int YKGW_Read(double *data, int numSignal, char errorMsg[]);"
+
+[YKGW_FetchItemNames]
+Class="Function"
+Prototype="int YKGW_FetchItemNames(char ***itemList, int *numItem, char errorMsg[]);"
+
+[YokogawaDaemon]
+Class="Function"
+Prototype="int YokogawaDaemon(void *functionData);"
+

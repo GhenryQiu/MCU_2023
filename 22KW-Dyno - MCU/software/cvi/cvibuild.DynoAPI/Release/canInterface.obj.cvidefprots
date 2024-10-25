@@ -1,0 +1,35 @@
+[CAN_Initialize]
+Class="Function"
+Prototype="int CAN_Initialize(char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\canInterface.c:32:1"
+
+[CAN_Close]
+Class="Function"
+Prototype="int CAN_Close();"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\canInterface.c:37:1"
+
+[CAN_LaunchDaemon]
+Class="Function"
+Prototype="int CAN_LaunchDaemon(char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\canInterface.c:43:1"
+
+[CAN_StopDaemon]
+Class="Function"
+Prototype="int CAN_StopDaemon();"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\canInterface.c:62:1"
+
+[CAN_SetToruqe]
+Class="Function"
+Prototype="int CAN_SetToruqe(float torqueCmd, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\canInterface.c:76:1"
+
+[CAN_SetControlMode]
+Class="Function"
+Prototype="int CAN_SetControlMode(unsigned char controlMode, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\canInterface.c:88:1"
+
+[CAN_GetStatus]
+Class="Function"
+Prototype="int CAN_GetStatus(float status[], unsigned char fault[], float temperature[], char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\canInterface.c:99:1"
+

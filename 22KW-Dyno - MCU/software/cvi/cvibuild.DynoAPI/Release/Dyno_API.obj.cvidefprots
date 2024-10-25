@@ -1,0 +1,125 @@
+[DYNO_SetTorqSpeedCallback]
+Class="Function"
+Prototype="int DYNO_SetTorqSpeedCallback(int (*CallbackPtr)(double *, double *, char *));"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:88:1"
+
+[DYNO_Initialize]
+Class="Function"
+Prototype="int DYNO_Initialize(const char *visa, char loadController, char torqueTransducer, char tempSensor, char chiller, char fluidSensor, const char *hvps, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:101:1"
+
+[DYNO_InitializeFromJson]
+Class="Function"
+Prototype="int DYNO_InitializeFromJson(const char *cfgFilePath, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:128:1"
+
+[DYNO_Destroy]
+Class="Function"
+Prototype="int DYNO_Destroy();"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:177:1"
+
+[DYNO_OpenVisa]
+Class="Function"
+Prototype="int DYNO_OpenVisa(const char *visa, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:191:1"
+
+[DYNO_OpenRS232]
+Class="Function"
+Prototype="int DYNO_OpenRS232(const char *visa, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:228:1"
+
+[DYNO_ReadModbus]
+Class="Function"
+Prototype="int DYNO_ReadModbus(double *torque, double *speed, double *psVoltage, double *psCurrent, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:261:1"
+
+[DYNO_ReadTorque]
+Class="Function"
+Prototype="int DYNO_ReadTorque(double *torque, double *speed, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:309:1"
+
+[Modbus_ReadTorque]
+Class="Function"
+Prototype="int Modbus_ReadTorque(double *torque, double *speed, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:324:1"
+
+[RS232_ReadTorque]
+Class="Function"
+Prototype="int RS232_ReadTorque(double *torque, double *speed, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:340:1"
+
+[DYNO_ReadPS]
+Class="Function"
+Prototype="int DYNO_ReadPS(float *outputVoltage, float *outputCurrent, char *isStopped, char *emergencyState, char *alertCode, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:390:1"
+
+[DYNO_ConfigurePS]
+Class="Function"
+Prototype="int DYNO_ConfigurePS(float voltage, float current, unsigned char enable, float ovp, float ocp, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:409:1"
+
+[DYNO_SetLoadMode]
+Class="Function"
+Prototype="int DYNO_SetLoadMode(enum Load_Mode loadMode, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:440:1"
+
+[DYNO_StartLoad]
+Class="Function"
+Prototype="int DYNO_StartLoad(short start, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:456:1"
+
+[DYNO_SetLoadSpeed]
+Class="Function"
+Prototype="int DYNO_SetLoadSpeed(unsigned short loadSpeed, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:463:1"
+
+[LOAD_SetTorqueMode]
+Class="Function"
+Prototype="int LOAD_SetTorqueMode(unsigned char enable, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:473:1"
+
+[LOAD_SetTorque]
+Class="Function"
+Prototype="int LOAD_SetTorque(double torqueSet, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:512:1"
+
+[buf2torque]
+Class="Function"
+Prototype="float buf2torque(const char *f);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:535:1"
+
+[buf2speed]
+Class="Function"
+Prototype="float buf2speed(const char *f);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:542:1"
+
+[buf2data_rs232]
+Class="Function"
+Prototype="float buf2data_rs232(const unsigned char *f);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:548:1"
+
+[CRC16_2]
+Class="Function"
+Prototype="unsigned int CRC16_2(unsigned char *buf, int len);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:574:1"
+
+[DYNO_CalculateCrc]
+Class="Function"
+Prototype="int DYNO_CalculateCrc(unsigned char buffer[], unsigned char dataSize);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:596:1"
+
+[DYNO_visaQuery]
+Class="Function"
+Prototype="int DYNO_visaQuery(unsigned char cmd[], unsigned char rxbuf[], short rxBufSize, int waitMs, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:605:1"
+
+[DYNO_tcpQuery]
+Class="Function"
+Prototype="int DYNO_tcpQuery(unsigned char cmd[], unsigned char rxbuf[], short rxBufSize, int waitMs, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:630:1"
+
+[buildPSCmd]
+Class="Function"
+Prototype="unsigned char *buildPSCmd(unsigned char cmd[], unsigned char mode, float data);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\Dyno_API.c:658:1"
+

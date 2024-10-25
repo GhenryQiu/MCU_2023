@@ -1,0 +1,13 @@
+-inrc c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\cvibuild.DynoAPI\Release\resources.in.rc
+-outrc c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\cvibuild.DynoAPI\Release\resources.out.rc
+-inhdef c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\cvibuild.DynoAPI\Release\canInterface.h.hdefs
+-inhdef c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\cvibuild.DynoAPI\Release\Dyno_API.h.hdefs
+-inhdef c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\cvibuild.DynoAPI\Release\yokogawa.h.hdefs
+-outdef c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\cvibuild.DynoAPI\Release\DynoAPI.dll.defs
+-indefprot c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\cvibuild.DynoAPI\Release\canInterface.obj.cvidefprots
+-indefprot c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\cvibuild.DynoAPI\Release\cJSON.obj.cvidefprots
+-indefprot c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\cvibuild.DynoAPI\Release\Dyno_API.obj.cvidefprots
+-indefprot c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\cvibuild.DynoAPI\Release\my_utility.obj.cvidefprots
+-indefprot c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\cvibuild.DynoAPI\Release\yokogawa.obj.cvidefprots
+-indefprot c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\cvibuild.DynoAPI\Release\zlgInterface.obj.cvidefprots
+-dllName DynoAPI.dll

@@ -1,0 +1,28 @@
+[CAN_Initialize]
+Class="Function"
+Prototype="int CAN_Initialize(char errorMsg[]);"
+
+[CAN_Close]
+Class="Function"
+Prototype="int CAN_Close();"
+
+[CAN_LaunchDaemon]
+Class="Function"
+Prototype="int CAN_LaunchDaemon(char errorMsg[]);"
+
+[CAN_StopDaemon]
+Class="Function"
+Prototype="int CAN_StopDaemon();"
+
+[CAN_SetToruqe]
+Class="Function"
+Prototype="int CAN_SetToruqe(float torqueCmd, char errorMsg[]);"
+
+[CAN_SetControlMode]
+Class="Function"
+Prototype="int CAN_SetControlMode(unsigned char controlMode, char errorMsg[]);"
+
+[CAN_GetStatus]
+Class="Function"
+Prototype="int CAN_GetStatus(float status[], unsigned char fault[], float temperature[], char errorMsg[]);"
+

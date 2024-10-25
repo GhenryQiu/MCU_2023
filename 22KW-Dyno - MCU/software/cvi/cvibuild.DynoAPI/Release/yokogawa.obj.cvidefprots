@@ -1,0 +1,55 @@
+[YKGW_Config]
+Class="Function"
+Prototype="int YKGW_Config(const char *ipAddress, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\yokogawa.c:53:1"
+
+[YKGW_Initialize]
+Class="Function"
+Prototype="int YKGW_Initialize(char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\yokogawa.c:68:1"
+
+[YKGW_Close]
+Class="Function"
+Prototype="int YKGW_Close(short destroyAll);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\yokogawa.c:104:1"
+
+[YKGW_BuildSetting]
+Class="Function"
+Prototype="int YKGW_BuildSetting(char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\yokogawa.c:137:1"
+
+[YokogawaDaemon]
+Class="Function"
+Prototype="int YokogawaDaemon(void *functionData);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\yokogawa.c:154:1"
+
+[YKGW_Read]
+Class="Function"
+Prototype="int YKGW_Read(double *data, int numSignal, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\yokogawa.c:175:1"
+
+[YKGW_ConfigItemList]
+Class="Function"
+Prototype="int YKGW_ConfigItemList(char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\yokogawa.c:200:1"
+
+[YKGW_FetchItemNames]
+Class="Function"
+Prototype="int YKGW_FetchItemNames(char ***itemList, int *numItem, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\yokogawa.c:222:1"
+
+[YKGW_Measure]
+Class="Function"
+Prototype="int YKGW_Measure(char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\yokogawa.c:251:1"
+
+[YKGW_Query]
+Class="Function"
+Prototype="int YKGW_Query(const char *cmd, char rxbuf[], short waitMs, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\yokogawa.c:290:1"
+
+[YKGW_Write]
+Class="Function"
+Prototype="int YKGW_Write(const char *cmd, char errorMsg[]);"
+SourceLocation="c:\Users\Henry\Documents\GitHub\MCU_2023\22KW-Dyno - MCU\software\cvi\source\yokogawa.c:314:1"
+

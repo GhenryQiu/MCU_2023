@@ -1,0 +1,66 @@
+
+
+
+
+
+
+[DYNO_InitializeFromJson]
+Class="Function"
+Prototype="int DYNO_InitializeFromJson(const char *cfgFilePath, char errorMsg[]);"
+
+[DYNO_Destroy]
+Class="Function"
+Prototype="int DYNO_Destroy();"
+
+[DYNO_CalculateCrc]
+Class="Function"
+Prototype="int DYNO_CalculateCrc(unsigned char buffer[], unsigned char dataSize);"
+
+[DYNO_ReadTorque]
+Class="Function"
+Prototype="int DYNO_ReadTorque(double *torque, double *speed, char errorMsg[]);"
+
+[DYNO_SetLoadMode]
+Class="Function"
+Prototype="int DYNO_SetLoadMode(enum Load_Mode loadMode, char errorMsg[]);"
+
+[DYNO_StartLoad]
+Class="Function"
+Prototype="int DYNO_StartLoad(short start, char errorMsg[]);"
+
+[DYNO_SetLoadSpeed]
+Class="Function"
+Prototype="int DYNO_SetLoadSpeed(unsigned short loadSpeed, char errorMsg[]);"
+
+[DYNO_EnableChiller]
+Class="Function"
+Prototype="int DYNO_EnableChiller(unsigned char enable, char errorMsg[]);"
+
+[DYNO_ConfigurePS]
+Class="Function"
+Prototype="int DYNO_ConfigurePS(float voltage, float current, unsigned char enable, float ovp, float ocp, char errorMsg[]);"
+
+[DYNO_ReadPS]
+Class="Function"
+Prototype="int DYNO_ReadPS(float *outputVoltage, float *outputCurrent, char *isStopped, char *emergencyState, char *alertCode, char errorMsg[]);"
+
+[DYNO_ConfigurePowerAnalyzer]
+Class="Function"
+Prototype="int DYNO_ConfigurePowerAnalyzer(const char *ipAddress, char errorMsg[]);"
+
+[DYNO_ReadPowerAnalyzer]
+Class="Function"
+Prototype="int DYNO_ReadPowerAnalyzer(float data[], char errorMsg[]);"
+
+[DYNO_ReadModbus]
+Class="Function"
+Prototype="int DYNO_ReadModbus(double *torque, double *speed, double *psVoltage, double *psCurrent, char errorMsg[]);"
+
+[LOAD_SetTorqueMode]
+Class="Function"
+Prototype="int LOAD_SetTorqueMode(unsigned char enable, char errorMsg[]);"
+
+[LOAD_SetTorque]
+Class="Function"
+Prototype="int LOAD_SetTorque(double torqueSet, char errorMsg[]);"
+
